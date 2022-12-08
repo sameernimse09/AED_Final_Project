@@ -1,11 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Business.DB4OUtil;
 
-import Business.EcoSys;
 import Business.ConfigureSystem;
+import Business.EcoSys;
 import com.db4o.Db4oEmbedded;
 import com.db4o.ObjectContainer;
 import com.db4o.ObjectSet;
@@ -18,10 +14,9 @@ import java.nio.file.Paths;
  * @author anushkadarade
  */
 public class DB4OUtil {
-    
+
     private static final String FILENAME = Paths.get("Databank.db4o").toAbsolutePath().toString();// path to the data store
     private static DB4OUtil dB4OUtil;
-    
     
     public synchronized static DB4OUtil getInstance(){
         if (dB4OUtil == null){
@@ -35,7 +30,7 @@ public class DB4OUtil {
             conn.close();
         }
     }
-    
+
     private ObjectContainer createConnection() {
         try {
 
@@ -57,7 +52,25 @@ public class DB4OUtil {
         }
         return null;
     }
+
+    public synchronized void storeSystem(EcoSys system) {
+        ObjectContainer conn = createConnection();
+        conn.store(system);
+        conn.commit();
+        conn.close();
+    }
     
-    
-    
+    public EcoSys retrieveSystem(){
+        ObjectContainer conn = createConnection();
+        ObjectSet<EcoSys> systems = conn.query(EcoSys.class); // Change to the object you want to save
+        EcoSys system;
+        if (systems.size() == 0){
+            system = ConfigureSystem.configure();  // If there's no System in the record, create a new one
+        }
+        else{
+            system = systems.get(systems.size() - 1);
+        }
+        conn.close();
+        return system;
+    }
 }
