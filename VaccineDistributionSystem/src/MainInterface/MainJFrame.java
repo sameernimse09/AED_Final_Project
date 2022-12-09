@@ -5,8 +5,8 @@
  */
 package MainInterface;
 
-import Business.DB4OUtil.DB4OUtil;
-import Business.EcoSys;
+import Model.DB4OUtil.DB4OUtil;
+import Model.EcoSys;
 import Business.Enterprise.Enterprise;
 //import Business.Network.Network;
 //import Business.Organization.Organization;
