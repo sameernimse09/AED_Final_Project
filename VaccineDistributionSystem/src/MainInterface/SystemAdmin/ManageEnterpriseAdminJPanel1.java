@@ -4,8 +4,8 @@
  */
 package MainInterface.SystemAdmin;
 
-import Business.DB4OUtil.DB4OUtil;
-import Business.EcoSystem;
+import Model.DB4OUtil.DB4OUtil;
+import Model.EcoSys;
 import Business.Employee.Employee;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
