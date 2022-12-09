@@ -3,22 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model.Enterprise;
+package Model.Organization;
 
-import Model.Network.Network;
+import Model.Role.DocR;
 import Model.Role.Role;
 import java.util.ArrayList;
 
 /**
  *
- * @author Sameer Nimse
+ * @author anushkadarade
  */
-public class GovtEnterprise extends Enterprise {
-    public GovtEnterprise(String name, Network network){
-        super(name,EnterpriseType.Government, network);
+public class DocOrg extends Organization{
+    public DocOrg() {
+        super(Type.Doctor.getValue());
     }
+    
     @Override
     public ArrayList<Role> getSupportedRole() {
-        return null;
+        ArrayList<Role> roles = new ArrayList();
+        roles.add(new DoctorRole());
+        return roles;
     }
 }

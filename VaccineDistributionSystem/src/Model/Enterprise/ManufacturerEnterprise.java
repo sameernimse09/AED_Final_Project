@@ -5,8 +5,8 @@
  */
 package Model.Enterprise;
 
-import Business.Network.Network;
-import Business.Role.Role;
+import Model.Network.Network;
+import Model.Role.Role;
 import java.util.ArrayList;
 
 /**

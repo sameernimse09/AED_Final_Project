@@ -5,9 +5,9 @@
  */
 package Model.Enterprise;
 
-import Business.Network.Network;
-import Business.Organization.Organization;
-import Business.Organization.OrganizationDirectory;
+import Model.Network.Network;
+import Model.Organization.Organization;
+import Model.Organization.OrgDirectory;
 
 /**
  *
@@ -16,7 +16,7 @@ import Business.Organization.OrganizationDirectory;
 public abstract class Enterprise extends Organization{
     
     private EnterpriseType enterpriseType;
-    private OrganizationDirectory organizationDirectory;
+    private OrgDirectory organizationDirectory;
     private Network network;
 
     public Network getNetwork() {
@@ -27,7 +27,7 @@ public abstract class Enterprise extends Organization{
         this.network = network;
     }
 
-    public OrganizationDirectory getOrganizationDirectory() {
+    public OrgDirectory getOrganizationDirectory() {
         return organizationDirectory;
     }
     
@@ -61,6 +61,6 @@ public abstract class Enterprise extends Organization{
         super(name);
         this.enterpriseType=type;
         this.network = network;
-        organizationDirectory=new OrganizationDirectory();
+        organizationDirectory=new OrgDirectory();
     }
 }

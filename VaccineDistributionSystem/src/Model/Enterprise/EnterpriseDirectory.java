@@ -5,13 +5,13 @@
  */
 package Model.Enterprise;
 
-import Business.Network.Network;
-import Business.Organization.OrganizationDirectory;
+import Model.Network.Network;
+import Model.Organization.OrgDirectory;
 import java.util.ArrayList;
 
 /**
  *
- * @author shashwatshrey
+ * @author Sameer Nimse
  */
 public class EnterpriseDirectory {
     private ArrayList<Enterprise> enterpriseList;
@@ -36,13 +36,13 @@ public class EnterpriseDirectory {
             enterprise=new HospitalEnterprise(name, network);
             enterpriseList.add(enterprise);
         } else if (type==Enterprise.EnterpriseType.Service){
-            enterprise=new ServiceEnterprise(name, network);
+            enterprise=new DistributorEnterprise(name, network);
             enterpriseList.add(enterprise);
         }else if (type==Enterprise.EnterpriseType.Pharmaceutical){
-            enterprise=new PharmaceuticalEnterprise(name, network);
+            enterprise=new ManufacturerEnterprise(name, network);
             enterpriseList.add(enterprise);
         }else if (type==Enterprise.EnterpriseType.Government){
-            enterprise=new GovernmentEnterprise(name, network);
+            enterprise=new GovtEnterprise(name, network);
             enterpriseList.add(enterprise);
         }
         return enterprise;
