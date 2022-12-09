@@ -7,10 +7,10 @@ package MainInterface;
 
 import Model.DB4OUtil.DB4OUtil;
 import Model.EcoSys;
-import Business.Enterprise.Enterprise;
-//import Business.Network.Network;
-//import Business.Organization.Organization;
-//import Business.UserAccount.UserAccount;
+import Model.Enterprise.Enterprise;
+import Model.Network.Network;
+import Model.Organization.Organization;
+import Model.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Color;
 import javax.swing.BorderFactory;

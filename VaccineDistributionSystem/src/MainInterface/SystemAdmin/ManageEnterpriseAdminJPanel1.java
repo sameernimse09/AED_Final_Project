@@ -6,11 +6,11 @@ package MainInterface.SystemAdmin;
 
 import Model.DB4OUtil.DB4OUtil;
 import Model.EcoSys;
-import Business.Employee.Employee;
-import Business.Enterprise.Enterprise;
-import Business.Network.Network;
-import Business.Role.AdminRole;
-import Business.UserAccount.UserAccount;
+import Model.Employee.Employee;
+import Model.Enterprise.Enterprise;
+import Model.Network.Network;
+import Model.Role.AdminR;
+import Model.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Component;
 import javax.swing.JOptionPane;
@@ -24,13 +24,13 @@ import javax.swing.table.DefaultTableModel;
 public class ManageEnterpriseAdminJPanel1 extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
-    private EcoSystem system;
+    private EcoSys system;
     private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
 
     /**
      * Creates new form ManageEnterpriseJPanel
      */
-    public ManageEnterpriseAdminJPanel1(JPanel userProcessContainer, EcoSystem system) {
+    public ManageEnterpriseAdminJPanel1(JPanel userProcessContainer, EcoSys system) {
         initComponents();
 
         this.userProcessContainer = userProcessContainer;

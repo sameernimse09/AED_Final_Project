@@ -1,8 +1,8 @@
 package Model;
 
-//import Business.Employee.Employee;
-//import Business.Role.SystemAdminRole;
-//import Business.UserAccount.UserAccount;
+import Model.Employee.Employee;
+import Model.Role.SystemAdminR;
+import Model.UserAccount.UserAccount;
 
 /**
  *
@@ -21,9 +21,9 @@ public class ConfigureSystem {
         //create user account
         
         
-//        Employee employee = system.getEmployeeDirectory().createEmployee("sysadmin");
-//        
-//        UserAccount ua = system.getUserAccountDirectory().createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
+        Employee employee = system.getEmployeeDirectory().createEmployee("sysadmin");
+        
+        UserAccount ua = system.getUserAccountDirectory().createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminR());
         
         return system;
     }
