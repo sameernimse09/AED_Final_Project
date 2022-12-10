@@ -5,27 +5,18 @@
  */
 package Model.WorkQueue;
 
-import Business.Organization.Vaccine;
-import Business.UserAccount.UserAccount;
+import Model.Organization.VaccineDetails;
+import Model.UserAccount.UserAccount;
 
 /**
  *
- * @author abhis
+ * @author anushkadarade
  */
-public class approvedVaccine extends WorkRequest{
-    /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author Abhishek
- */
+public class approvedVaccine extends WorkReq{
     
     private String testResult;
     
-    private Vaccine vaccine;
+    private VaccineDetails vaccine;
     
     private UserAccount sales;
 
@@ -37,11 +28,11 @@ public class approvedVaccine extends WorkRequest{
         this.sales = sales;
     }
 
-    public Vaccine getVaccine() {
+    public VaccineDetails getVaccine() {
         return vaccine;
     }
 
-    public void setVaccine(Vaccine vaccine) {
+    public void setVaccine(VaccineDetails vaccine) {
         this.vaccine = vaccine;
     }
 
