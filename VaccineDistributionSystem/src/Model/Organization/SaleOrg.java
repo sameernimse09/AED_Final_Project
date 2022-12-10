@@ -22,7 +22,7 @@ public class SaleOrg extends Organization {
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new SalesRole());
+        roles.add(new SalesR());
         return roles;
     }
 }

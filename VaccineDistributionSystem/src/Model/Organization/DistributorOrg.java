@@ -15,7 +15,7 @@ import java.util.ArrayList;
  * @author anushkadarade
  */
 public class DistributorOrg extends Organization {
-    public ArrayList<PersonOrganization> personDirectory;
+    public ArrayList<PersonOrg> personDirectory;
     
     public ArrayList<VaccineCount> vaccineDirectory;
 
@@ -27,23 +27,23 @@ public class DistributorOrg extends Organization {
         this.vaccineDirectory = vaccineDirectory;
     }
 
-    public ArrayList<PersonOrganization> getPersonDirectory() {
+    public ArrayList<PersonOrg> getPersonDirectory() {
         return personDirectory;
     }
 
-    public void setPersonDirectory(ArrayList<PersonOrganization> personDirectory) {
+    public void setPersonDirectory(ArrayList<PersonOrg> personDirectory) {
         this.personDirectory = personDirectory;
     }
     public DistributorOrg() {
         super(Type.Distribution.getValue());
-        this.personDirectory = new ArrayList<PersonOrganization>();
+        this.personDirectory = new ArrayList<PersonOrg>();
         this.vaccineDirectory = new ArrayList<VaccineCount>();
     }
     
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new DistributionRole());
+        roles.add(new DistributorR());
         return roles;
     }
 }

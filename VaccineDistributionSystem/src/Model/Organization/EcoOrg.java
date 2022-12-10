@@ -32,7 +32,7 @@ public class EcoOrg extends Organization {
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new EconomyRole());
+        roles.add(new EcoR());
         return roles;
     }
 }
