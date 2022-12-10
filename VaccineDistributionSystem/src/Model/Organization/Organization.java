@@ -4,7 +4,7 @@
  */
 package Model.Organization;
 
-import Model.Employee.EmployeeDirectory;
+import Model.Employee.EmployeeDir;
 import Model.Network.Network;
 import Model.Role.Role;
 import Model.UserAccount.UserAccountDirectory;
@@ -20,7 +20,7 @@ public abstract class Organization {
     private String name;
     private Network network;
     private WorkQueue workQueue;
-    private EmployeeDirectory employeeDirectory;
+    private EmployeeDir employeeDirectory;
     private UserAccountDirectory userAccountDirectory;
     private int organizationID;
     private static int counter=0;
@@ -42,7 +42,7 @@ public abstract class Organization {
         this.name = name;
 //        this.network = network;
         workQueue = new WorkQueue();
-        employeeDirectory = new EmployeeDirectory();
+        employeeDirectory = new EmployeeDir();
         userAccountDirectory = new UserAccountDirectory();
         organizationID = counter;
         ++counter;
@@ -66,7 +66,7 @@ public abstract class Organization {
         Organization.counter = counter;
     }
 
-    public EmployeeDirectory getEmployeeDirectory() {
+    public EmployeeDir getEmployeeDirectory() {
         return employeeDirectory;
     }
     

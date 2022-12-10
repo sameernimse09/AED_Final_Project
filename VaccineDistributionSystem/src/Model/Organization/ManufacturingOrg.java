@@ -26,7 +26,7 @@ public class ManufacturingOrg extends Organization{
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new ManufacturingRole());
+        roles.add(new ManufacturingR());
         return roles;
     }
      

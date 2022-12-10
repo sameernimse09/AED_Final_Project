@@ -22,7 +22,7 @@ public class PharmaOrg extends Organization{
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new PharmaRole());
+        roles.add(new PharmaR());
         return roles;
     }
     

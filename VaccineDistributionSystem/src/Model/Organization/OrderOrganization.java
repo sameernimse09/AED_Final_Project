@@ -6,7 +6,7 @@
 package Model.Organization;
 
 import Model.Role.DocR;
-import Model.Role.OrderR;
+import Model.Role.PurchaseR;
 import Model.Role.Role;
 import java.util.ArrayList;
 
@@ -16,40 +16,40 @@ import java.util.ArrayList;
  */
 public class OrderOrganization extends Organization {
     
-    private ArrayList<PurchaseInventory> purchaseDirectory;
+    private ArrayList<OrderInventory> purchaseDirectory;
 
-    public ArrayList<PurchaseInventory> getPurchaseDirectory() {
+    public ArrayList<OrderInventory> getPurchaseDirectory() {
         return purchaseDirectory;
     }
 
-    public void setPurchaseDirectory(ArrayList<PurchaseInventory> purchaseDirectory) {
+    public void setPurchaseDirectory(ArrayList<OrderInventory> purchaseDirectory) {
         this.purchaseDirectory = purchaseDirectory;
     }
     
     
      public OrderOrganization() {
         super(Type.Purchase.getValue());
-        this.purchaseDirectory = new ArrayList<PurchaseInventory>();
+        this.purchaseDirectory = new ArrayList<OrderInventory>();
     }
     
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new PurchaseRole());
+        roles.add(new PurchaseR());
         return roles;
     }
-    public PurchaseInventory addPI(PurchaseInventory pi){
+    public OrderInventory addPI(OrderInventory pi){
         
         this.purchaseDirectory.add(pi);
         return pi;
     }
     
-    public void updateVaccine(PurchaseInventory pi){
+    public void updateVaccine(OrderInventory pi){
         int index = purchaseDirectory.indexOf(pi);
         purchaseDirectory.set(index, pi);
     }
     
-    public void deleteVaccine(PurchaseInventory pi){
+    public void deleteVaccine(OrderInventory pi){
         purchaseDirectory.remove(pi);
     }
 }

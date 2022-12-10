@@ -26,37 +26,37 @@ public class OrgDirectory {
     public Organization createOrganization(Type type){
         Organization organization = null;
         if (type.getValue().equals(Type.Doctor.getValue())){
-            organization = new DoctorOrganization();
+            organization = new DocOrg();
             organizationList.add(organization);
         }
         else if(type.getValue().equals(Type.Person.getValue())){
-            organization = new PersonOrganization();
+            organization = new PersonOrg();
             organizationList.add(organization);
         }
         else if(type.getValue().equals(Type.Pharma.getValue())){
-            organization = new PharmaOrganization();
+            organization = new PharmaOrg();
             organizationList.add(organization);
         }
         else if (type.getValue().equals(Type.Lab.getValue())){
-            organization = new LabOrganization();
+            organization = new LabOrg();
             organizationList.add(organization);
         }else if (type.getValue().equals(Type.Manufacturing.getValue())){
-            organization = new ManufacturingOrganization();
+            organization = new ManufacturingOrg();
             organizationList.add(organization);
         }else if (type.getValue().equals(Type.Sales.getValue())){
-            organization = new SalesOrganization();
+            organization = new SaleOrg();
             organizationList.add(organization);
         }else if (type.getValue().equals(Type.Purchase.getValue())){
-            organization = new PurchaseOrganization();
+            organization = new OrderOrganization();
             organizationList.add(organization);
         }else if (type.getValue().equals(Type.Health.getValue())){
-            organization = new HealthOrganization();
+            organization = new HealthOrg();
             organizationList.add(organization);
         }else if (type.getValue().equals(Type.Economy.getValue())){
-            organization = new EconomyOrganization();
+            organization = new EcoOrg();
             organizationList.add(organization);
         }else if (type.getValue().equals(Type.Distribution.getValue())){
-            organization = new DistributionOrganization();
+            organization = new DistributorOrg();
             organizationList.add(organization);
         }
         return organization;

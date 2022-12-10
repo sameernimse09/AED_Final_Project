@@ -21,7 +21,7 @@ public class DocOrg extends Organization{
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new DoctorRole());
+        roles.add(new DocR());
         return roles;
     }
 }

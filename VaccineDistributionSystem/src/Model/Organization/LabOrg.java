@@ -21,7 +21,7 @@ public class LabOrg extends Organization{
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new LabRole());
+        roles.add(new LabR());
         return roles;
     }
      
