@@ -83,17 +83,17 @@ public class ReqVaccineJPanel extends javax.swing.JPanel {
         btnOrder = new javax.swing.JButton();
         separatorLine = new javax.swing.JSeparator();
 
-        setBackground(new java.awt.Color(36, 47, 65));
+        setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(670, 848));
         setPreferredSize(new java.awt.Dimension(670, 848));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblManufacturer.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblManufacturer.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblManufacturer.setForeground(new java.awt.Color(255, 255, 255));
         lblManufacturer.setText("Select Manufacturer:");
         add(lblManufacturer, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, -1, -1));
 
-        cmbManufacturer.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        cmbManufacturer.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         cmbManufacturer.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cmbManufacturer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,22 +102,22 @@ public class ReqVaccineJPanel extends javax.swing.JPanel {
         });
         add(cmbManufacturer, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, -1, -1));
 
-        lblQuantity.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblQuantity.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblQuantity.setForeground(new java.awt.Color(255, 255, 255));
         lblQuantity.setText("Enter Quantity:");
         add(lblQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 220, -1, -1));
 
-        txtQuantity.setBackground(new java.awt.Color(36, 47, 65));
-        txtQuantity.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        txtQuantity.setBackground(new java.awt.Color(11, 49, 48));
+        txtQuantity.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         txtQuantity.setBorder(null);
         txtQuantity.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtQuantityKeyTyped(evt);
             }
         });
-        add(txtQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 220, 180, -1));
+        add(txtQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 210, 180, -1));
 
-        btnOrder.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnOrder.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnOrder.setText("Order");
         btnOrder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,6 +126,7 @@ public class ReqVaccineJPanel extends javax.swing.JPanel {
         });
         add(btnOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 310, -1, -1));
 
+        separatorLine.setBackground(new java.awt.Color(255, 255, 255));
         separatorLine.setForeground(new java.awt.Color(255, 255, 255));
         separatorLine.setMinimumSize(new java.awt.Dimension(1, 12));
         separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
