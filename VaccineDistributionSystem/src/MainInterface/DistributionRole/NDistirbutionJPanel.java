@@ -84,18 +84,19 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
         lblText = new javax.swing.JLabel();
         lblValue = new javax.swing.JLabel();
         VaccinejDateChooser = new com.toedter.calendar.JDateChooser();
+        jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(36, 47, 65));
+        setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1440, 848));
         setPreferredSize(new java.awt.Dimension(1440, 848));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblVaccineCount.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblVaccineCount.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblVaccineCount.setForeground(new java.awt.Color(255, 255, 255));
         lblVaccineCount.setText("Vaccine Count:");
         add(lblVaccineCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, -1, -1));
 
-        btnSchedule.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnSchedule.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnSchedule.setText("Schedule");
         btnSchedule.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,13 +105,14 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
         });
         add(btnSchedule, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 430, -1, -1));
 
-        txtvaccineCount.setBackground(new java.awt.Color(36, 47, 65));
-        txtvaccineCount.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        txtvaccineCount.setBackground(new java.awt.Color(11, 49, 48));
+        txtvaccineCount.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         txtvaccineCount.setForeground(new java.awt.Color(255, 255, 255));
         txtvaccineCount.setBorder(null);
-        add(txtvaccineCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 320, 240, -1));
+        add(txtvaccineCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 240, -1));
 
-        tblRequests.setBackground(new java.awt.Color(97, 212, 195));
+        tblRequests.setBackground(new java.awt.Color(124, 169, 130));
+        tblRequests.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         tblRequests.setForeground(new java.awt.Color(36, 47, 65));
         tblRequests.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -127,12 +129,13 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
                 "Sender", "Receiver", "Status", "Date"
             }
         ));
-        tblRequests.setGridColor(new java.awt.Color(97, 212, 195));
+        tblRequests.setGridColor(new java.awt.Color(4, 182, 145));
         jScrollPane1.setViewportView(tblRequests);
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 485, 180));
 
-        tblVaccine.setBackground(new java.awt.Color(97, 212, 195));
+        tblVaccine.setBackground(new java.awt.Color(124, 169, 130));
+        tblVaccine.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         tblVaccine.setForeground(new java.awt.Color(36, 47, 65));
         tblVaccine.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -149,7 +152,7 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
                 "Sender", "Receiver", "Quantity", "Status"
             }
         ));
-        tblVaccine.setGridColor(new java.awt.Color(97, 212, 195));
+        tblVaccine.setGridColor(new java.awt.Color(4, 182, 145));
         jScrollPane2.setViewportView(tblVaccine);
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 500, 520, 180));
@@ -158,20 +161,23 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
         separatorLine1.setMinimumSize(new java.awt.Dimension(1, 12));
         separatorLine1.setPreferredSize(new java.awt.Dimension(1, 12));
         add(separatorLine1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 340, 220, 10));
-
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/DISTRIBUTORWORKAREA.png"))); // NOI18N
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 0, 100, 850));
 
-        lblText.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblText.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblText.setForeground(new java.awt.Color(255, 255, 255));
         lblText.setText("Currently Logged in as:");
         add(lblText, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, -1, 30));
 
-        lblValue.setFont(new java.awt.Font("Optima", 1, 22)); // NOI18N
-        lblValue.setForeground(new java.awt.Color(97, 212, 195));
+        lblValue.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lblValue.setForeground(new java.awt.Color(124, 169, 130));
         lblValue.setText("<value>");
         add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, 230, 30));
         add(VaccinejDateChooser, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 430, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("DISTRIBUTOR AREA");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 30, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnScheduleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnScheduleActionPerformed
@@ -266,6 +272,7 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private com.toedter.calendar.JDateChooser VaccinejDateChooser;
     private javax.swing.JButton btnSchedule;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lblText;
