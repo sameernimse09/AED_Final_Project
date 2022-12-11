@@ -77,13 +77,14 @@ public class SalesJPanel extends javax.swing.JPanel {
         lblText = new javax.swing.JLabel();
         lblValue = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(36, 47, 65));
+        setBackground(new java.awt.Color(11, 49, 48));
         setMaximumSize(new java.awt.Dimension(1440, 848));
         setMinimumSize(new java.awt.Dimension(1440, 848));
         setPreferredSize(new java.awt.Dimension(1440, 848));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tblVaccine.setBackground(new java.awt.Color(97, 212, 195));
+        tblVaccine.setBackground(new java.awt.Color(124, 169, 130));
+        tblVaccine.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         tblVaccine.setForeground(new java.awt.Color(36, 47, 65));
         tblVaccine.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -100,42 +101,42 @@ public class SalesJPanel extends javax.swing.JPanel {
                 "Sender", "Receiver", "Quantity per dose", "Status"
             }
         ));
-        tblVaccine.setGridColor(new java.awt.Color(97, 212, 195));
-        tblVaccine.setRowHeight(20);
+        tblVaccine.setGridColor(new java.awt.Color(4, 182, 145));
         jScrollPane1.setViewportView(tblVaccine);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 440, 480, 180));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 580, 480, 180));
 
-        btnReject.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnReject.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnReject.setText("Reject");
         btnReject.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRejectActionPerformed(evt);
             }
         });
-        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 350, -1, -1));
+        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 490, -1, -1));
 
-        txtComments.setBackground(new java.awt.Color(36, 47, 65));
-        txtComments.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        txtComments.setBackground(new java.awt.Color(11, 49, 48));
+        txtComments.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         txtComments.setForeground(new java.awt.Color(255, 255, 255));
         txtComments.setBorder(null);
-        add(txtComments, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 190, 20));
+        add(txtComments, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 450, 190, 20));
 
-        lblComment.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblComment.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblComment.setForeground(new java.awt.Color(255, 255, 255));
         lblComment.setText("Comments:");
-        add(lblComment, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, -1, -1));
+        add(lblComment, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 450, -1, -1));
 
-        btnApprove.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnApprove.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnApprove.setText("Approve");
         btnApprove.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnApproveActionPerformed(evt);
             }
         });
-        add(btnApprove, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, -1, -1));
+        add(btnApprove, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 490, -1, -1));
 
-        tblOrders.setBackground(new java.awt.Color(97, 212, 195));
+        tblOrders.setBackground(new java.awt.Color(124, 169, 130));
+        tblOrders.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         tblOrders.setForeground(new java.awt.Color(36, 47, 65));
         tblOrders.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -152,29 +153,28 @@ public class SalesJPanel extends javax.swing.JPanel {
                 "Sender", "Receiver", "Quantity", "Status"
             }
         ));
-        tblOrders.setGridColor(new java.awt.Color(97, 212, 195));
-        tblOrders.setRowHeight(20);
+        tblOrders.setGridColor(new java.awt.Color(4, 182, 145));
         jScrollPane2.setViewportView(tblOrders);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 110, 480, 180));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 230, 480, 180));
 
         separatorLine.setForeground(new java.awt.Color(255, 255, 255));
         separatorLine.setMinimumSize(new java.awt.Dimension(1, 12));
         separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 330, 180, -1));
+        add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 470, 180, -1));
 
         lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/SALESWORKAREA.png"))); // NOI18N
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 0, 100, 850));
 
-        lblText.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblText.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblText.setForeground(new java.awt.Color(255, 255, 255));
         lblText.setText("Currently Logged in as:");
-        add(lblText, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, -1, 30));
+        add(lblText, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 170, -1, 30));
 
-        lblValue.setFont(new java.awt.Font("Optima", 1, 22)); // NOI18N
-        lblValue.setForeground(new java.awt.Color(97, 212, 195));
+        lblValue.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lblValue.setForeground(new java.awt.Color(124, 169, 130));
         lblValue.setText("<value>");
-        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, 230, 30));
+        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 170, 230, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnApproveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApproveActionPerformed
