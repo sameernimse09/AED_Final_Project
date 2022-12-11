@@ -10,7 +10,7 @@ import Model.Network.Network;
 import Model.Organization.DocOrg;
 import Model.Organization.Organization;
 import Model.UserAccount.UserAccount;
-import MainInterface.DocR.DoctorWorkAreaJPanel;
+import MainInterface.DoctorRole.DocAreaJPanel;
 import javax.swing.JPanel;
 
 /**
@@ -21,7 +21,7 @@ public class DocR extends Role{
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
-        return new DoctorWorkAreaJPanel(userProcessContainer, account, (DocOrg)organization, enterprise, business);
+        return new DocAreaJPanel(userProcessContainer, account, (DocOrg)organization, enterprise, business);
     }
 
     

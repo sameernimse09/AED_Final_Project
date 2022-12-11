@@ -11,7 +11,7 @@ import Model.Network.Network;
 import Model.Organization.Organization;
 import Model.Organization.EcoOrg;
 import Model.UserAccount.UserAccount;
-import MainInterface.EcoR.EconomyWorkAreaJPanel;
+import MainInterface.EcoRole.EcoAreaJPanel;
 import javax.swing.JPanel;
 
 /**
@@ -22,7 +22,7 @@ public class EcoR extends Role{
     
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
-        return new EconomyWorkAreaJPanel(userProcessContainer, account, (EcoOrg)organization, enterprise, business);
+        return new EcoAreaJPanel(userProcessContainer, account, (EcoOrg)organization, enterprise, business);
     }
 
     

@@ -11,7 +11,7 @@ import Model.Network.Network;
 import Model.Organization.Organization;
 import Model.Organization.OrderOrganization;
 import Model.UserAccount.UserAccount;
-import MainInterface.PurchaseR.PurchaseWorkAreaJPanel;
+import MainInterface.PurchaseRole.PurchaseAreaJPanel;
 import javax.swing.JPanel;
 
 /**
@@ -22,7 +22,7 @@ public class PurchaseR extends Role{
     
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
-        return new PurchaseWorkAreaJPanel(userProcessContainer, account, (OrderOrganization)organization, enterprise, business);
+        return new PurchaseAreaJPanel(userProcessContainer, account, (OrderOrganization)organization, enterprise, business);
     }
 
 

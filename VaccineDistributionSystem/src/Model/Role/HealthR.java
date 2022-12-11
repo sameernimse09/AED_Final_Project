@@ -11,18 +11,18 @@ import Model.Network.Network;
 import Model.Organization.Organization;
 import Model.Organization.HealthOrg;
 import Model.UserAccount.UserAccount;
-import MainInterface.HealthR.HealthWorkAreaJPanel;
+import MainInterface.HealthRole.HealthAreaJPanel;
 import javax.swing.JPanel;
 
 /**
  *
- * @author vraj
+ * @author Sameer Nimse
  */
 public class HealthR extends Role{
     
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
-        return new HealthWorkAreaJPanel(userProcessContainer, account, (HealthOrg)organization, enterprise, business);
+        return new HealthAreaJPanel(userProcessContainer, account, (HealthOrg)organization, enterprise, business);
     }
 
 }

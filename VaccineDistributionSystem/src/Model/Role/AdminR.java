@@ -18,8 +18,8 @@ import javax.swing.JPanel;
 public class AdminR extends Role{
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {
-        return new AdminWorkAreaJPanel(userProcessContainer, enterprise,account );
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
+        return new AdminJPanel(userProcessContainer, enterprise,account );
     }
     
 }
