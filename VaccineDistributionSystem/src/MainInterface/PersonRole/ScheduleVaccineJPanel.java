@@ -54,18 +54,19 @@ public class ScheduleVaccineJPanel extends javax.swing.JPanel {
         cmbDistributor = new javax.swing.JComboBox<>();
         lblTitle = new javax.swing.JLabel();
         iconBack = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(36, 47, 65));
+        setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1440, 848));
         setPreferredSize(new java.awt.Dimension(1440, 848));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblDistributor.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblDistributor.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblDistributor.setForeground(new java.awt.Color(255, 255, 255));
         lblDistributor.setText("Select Distribution Center:");
         add(lblDistributor, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, -1, -1));
 
-        btnRequest.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnRequest.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnRequest.setText("Request");
         btnRequest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,11 +75,9 @@ public class ScheduleVaccineJPanel extends javax.swing.JPanel {
         });
         add(btnRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 350, -1, -1));
 
-        cmbDistributor.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        cmbDistributor.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         cmbDistributor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         add(cmbDistributor, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 220, -1, -1));
-
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/PERSONWORKAREA.png"))); // NOI18N
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 0, 100, 850));
 
         iconBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/back.png"))); // NOI18N
@@ -87,7 +86,12 @@ public class ScheduleVaccineJPanel extends javax.swing.JPanel {
                 iconBackMousePressed(evt);
             }
         });
-        add(iconBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 20, -1, -1));
+        add(iconBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 630, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("PERSON AREA");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 70, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequestActionPerformed
@@ -179,6 +183,7 @@ public class ScheduleVaccineJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnRequest;
     private javax.swing.JComboBox<String> cmbDistributor;
     private javax.swing.JLabel iconBack;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblDistributor;
     private javax.swing.JLabel lblTitle;
     // End of variables declaration//GEN-END:variables
