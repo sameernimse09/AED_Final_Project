@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Naisargi Thakkar
  */
-public class ManageNetworkPanel extends javax.swing.JPanel {
+public class ManageNetworkJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private EcoSys system;
@@ -28,7 +28,7 @@ public class ManageNetworkPanel extends javax.swing.JPanel {
      *
      * Creates new form ManageNetworkJPanel
      */
-    public ManageNetworkPanel(JPanel userProcessContainer, EcoSys system) {
+    public ManageNetworkJPanel(JPanel userProcessContainer, EcoSys system) {
         initComponents();
 
         this.userProcessContainer = userProcessContainer;

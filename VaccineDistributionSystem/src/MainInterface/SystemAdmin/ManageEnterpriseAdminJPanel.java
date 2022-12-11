@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Naisargi Thakkar
  */
-public class ManageAdminJPanel extends javax.swing.JPanel {
+public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private EcoSys system;
@@ -30,7 +30,7 @@ public class ManageAdminJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ManageEnterpriseJPanel
      */
-    public ManageAdminJPanel(JPanel userProcessContainer, EcoSys system) {
+    public ManageEnterpriseAdminJPanel(JPanel userProcessContainer, EcoSys system) {
         initComponents();
 
         this.userProcessContainer = userProcessContainer;
