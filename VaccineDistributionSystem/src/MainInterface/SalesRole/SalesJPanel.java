@@ -174,7 +174,7 @@ public class SalesJPanel extends javax.swing.JPanel {
         lblValue.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         lblValue.setForeground(new java.awt.Color(124, 169, 130));
         lblValue.setText("<value>");
-        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 170, 230, 30));
+        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 170, 230, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnApproveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApproveActionPerformed

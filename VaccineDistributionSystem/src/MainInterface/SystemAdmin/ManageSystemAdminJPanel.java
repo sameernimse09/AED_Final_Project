@@ -87,7 +87,7 @@ public class ManageSystemAdminJPanel extends javax.swing.JPanel {
         lblNetwork.setMaximumSize(new java.awt.Dimension(180, 20));
         lblNetwork.setMinimumSize(new java.awt.Dimension(180, 20));
         lblNetwork.setPreferredSize(new java.awt.Dimension(180, 20));
-        onePanel.add(lblNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 148, -1));
+        onePanel.add(lblNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 180, -1));
 
         iconNetwork.setBackground(new java.awt.Color(11, 49, 48));
         iconNetwork.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/network.png"))); // NOI18N
@@ -124,7 +124,7 @@ public class ManageSystemAdminJPanel extends javax.swing.JPanel {
         lblEnterprise.setMaximumSize(new java.awt.Dimension(180, 20));
         lblEnterprise.setMinimumSize(new java.awt.Dimension(180, 20));
         lblEnterprise.setPreferredSize(new java.awt.Dimension(180, 20));
-        twoPanel.add(lblEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 152, -1));
+        twoPanel.add(lblEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 190, -1));
 
         iconEnterprise.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/enterprise.png"))); // NOI18N
         twoPanel.add(iconEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, -1, 50));
