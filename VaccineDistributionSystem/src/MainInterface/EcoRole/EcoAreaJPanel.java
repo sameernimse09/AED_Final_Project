@@ -75,31 +75,33 @@ public class EcoAreaJPanel extends javax.swing.JPanel {
         lblTitle = new javax.swing.JLabel();
         lblText = new javax.swing.JLabel();
         lblValue = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(36, 47, 65));
+        setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1440, 848));
         setPreferredSize(new java.awt.Dimension(1440, 848));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnApprove.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnApprove.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnApprove.setText("Approve Vaccine");
         btnApprove.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnApproveActionPerformed(evt);
             }
         });
-        add(btnApprove, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 620, -1, -1));
+        add(btnApprove, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 700, -1, -1));
 
-        btnReject.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnReject.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnReject.setText("Reject Vaccine");
         btnReject.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRejectActionPerformed(evt);
             }
         });
-        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 620, -1, -1));
+        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 700, -1, -1));
 
-        tblWorkRequest.setBackground(new java.awt.Color(97, 212, 195));
+        tblWorkRequest.setBackground(new java.awt.Color(124, 169, 130));
+        tblWorkRequest.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         tblWorkRequest.setForeground(new java.awt.Color(36, 47, 65));
         tblWorkRequest.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -116,28 +118,28 @@ public class EcoAreaJPanel extends javax.swing.JPanel {
                 "Vaccine Name", "Sender", "Receiver", "Status"
             }
         ));
-        tblWorkRequest.setGridColor(new java.awt.Color(97, 212, 195));
+        tblWorkRequest.setGridColor(new java.awt.Color(4, 182, 145));
         jScrollPane1.setViewportView(tblWorkRequest);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 520, 180));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, 520, 180));
 
-        lblQuantity.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblQuantity.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblQuantity.setForeground(new java.awt.Color(255, 255, 255));
         lblQuantity.setText("Quantity per dose(in mg):");
-        add(lblQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 370, -1, -1));
+        add(lblQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 450, -1, -1));
 
-        lblDose.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblDose.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblDose.setForeground(new java.awt.Color(255, 255, 255));
         lblDose.setText("Number of doses:");
-        add(lblDose, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 420, -1, -1));
+        add(lblDose, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 500, -1, -1));
 
-        lblGap.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblGap.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblGap.setForeground(new java.awt.Color(255, 255, 255));
         lblGap.setText("Gap between dose(in days):");
-        add(lblGap, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 460, -1, -1));
+        add(lblGap, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 540, -1, -1));
 
-        txtQuantity.setBackground(new java.awt.Color(36, 47, 65));
-        txtQuantity.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        txtQuantity.setBackground(new java.awt.Color(11, 49, 48));
+        txtQuantity.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         txtQuantity.setForeground(new java.awt.Color(255, 255, 255));
         txtQuantity.setBorder(null);
         txtQuantity.addActionListener(new java.awt.event.ActionListener() {
@@ -145,16 +147,16 @@ public class EcoAreaJPanel extends javax.swing.JPanel {
                 txtQuantityActionPerformed(evt);
             }
         });
-        add(txtQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 370, 210, -1));
+        add(txtQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 440, 210, -1));
 
-        txtDose.setBackground(new java.awt.Color(36, 47, 65));
-        txtDose.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        txtDose.setBackground(new java.awt.Color(11, 49, 48));
+        txtDose.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         txtDose.setForeground(new java.awt.Color(255, 255, 255));
         txtDose.setBorder(null);
-        add(txtDose, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 420, 220, 20));
+        add(txtDose, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 500, 220, 20));
 
-        txtGap.setBackground(new java.awt.Color(36, 47, 65));
-        txtGap.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        txtGap.setBackground(new java.awt.Color(11, 49, 48));
+        txtGap.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         txtGap.setForeground(new java.awt.Color(255, 255, 255));
         txtGap.setBorder(null);
         txtGap.addActionListener(new java.awt.event.ActionListener() {
@@ -162,51 +164,54 @@ public class EcoAreaJPanel extends javax.swing.JPanel {
                 txtGapActionPerformed(evt);
             }
         });
-        add(txtGap, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 460, 230, -1));
+        add(txtGap, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 530, 230, -1));
 
-        lblPrice.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblPrice.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblPrice.setForeground(new java.awt.Color(255, 255, 255));
         lblPrice.setText("Price (in USD):");
-        add(lblPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 500, -1, -1));
+        add(lblPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 580, -1, -1));
 
-        txtPrice.setBackground(new java.awt.Color(36, 47, 65));
-        txtPrice.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        txtPrice.setBackground(new java.awt.Color(11, 49, 48));
+        txtPrice.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         txtPrice.setForeground(new java.awt.Color(255, 255, 255));
         txtPrice.setBorder(null);
-        add(txtPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 500, 250, -1));
+        add(txtPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 570, 250, -1));
 
         separatorLine.setForeground(new java.awt.Color(255, 255, 255));
         separatorLine.setMinimumSize(new java.awt.Dimension(1, 12));
         separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 390, 180, -1));
+        add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 470, 180, -1));
 
         separatorLine1.setForeground(new java.awt.Color(255, 255, 255));
         separatorLine1.setMinimumSize(new java.awt.Dimension(1, 12));
         separatorLine1.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 440, 180, -1));
+        add(separatorLine1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 520, 180, -1));
 
         separatorLine2.setForeground(new java.awt.Color(255, 255, 255));
         separatorLine2.setMinimumSize(new java.awt.Dimension(1, 12));
         separatorLine2.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 480, 180, -1));
+        add(separatorLine2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 560, 180, -1));
 
         separatorLine3.setForeground(new java.awt.Color(255, 255, 255));
         separatorLine3.setMinimumSize(new java.awt.Dimension(1, 12));
         separatorLine3.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 520, 180, -1));
-
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ECONOMYWORKAREA.png"))); // NOI18N
+        add(separatorLine3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 600, 180, -1));
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 0, 100, 850));
 
-        lblText.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblText.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblText.setForeground(new java.awt.Color(255, 255, 255));
         lblText.setText("Currently Logged in as:");
-        add(lblText, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, -1, 30));
+        add(lblText, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, -1, 30));
 
-        lblValue.setFont(new java.awt.Font("Optima", 1, 22)); // NOI18N
-        lblValue.setForeground(new java.awt.Color(97, 212, 195));
+        lblValue.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lblValue.setForeground(new java.awt.Color(124, 169, 130));
         lblValue.setText("<value>");
-        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, 230, 30));
+        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, 230, 30));
+
+        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("ECONOMY AREA");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 50, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     public void populateTable(){
@@ -299,6 +304,7 @@ public class EcoAreaJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnApprove;
     private javax.swing.JButton btnReject;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblDose;
     private javax.swing.JLabel lblGap;
