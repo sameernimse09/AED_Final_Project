@@ -76,22 +76,24 @@ public class ManufactureAreaJPanel extends javax.swing.JPanel {
         lblText = new javax.swing.JLabel();
         lblValue = new javax.swing.JLabel();
         lblTitle = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(36, 47, 65));
+        setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1440, 848));
         setPreferredSize(new java.awt.Dimension(1440, 848));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnSendSample.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnSendSample.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnSendSample.setText("Send Sample for approval");
         btnSendSample.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSendSampleActionPerformed(evt);
             }
         });
-        add(btnSendSample, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 500, -1, -1));
+        add(btnSendSample, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 660, -1, -1));
 
-        tblRequest.setBackground(new java.awt.Color(97, 212, 195));
+        tblRequest.setBackground(new java.awt.Color(124, 169, 130));
+        tblRequest.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         tblRequest.setForeground(new java.awt.Color(36, 47, 65));
         tblRequest.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -108,41 +110,44 @@ public class ManufactureAreaJPanel extends javax.swing.JPanel {
                 "Vaccine Name", "Scientific Name", "Manufacturer Name", "Quantity per dose", "Number of Doses", "Status"
             }
         ));
-        tblRequest.setGridColor(new java.awt.Color(97, 212, 195));
+        tblRequest.setGridColor(new java.awt.Color(4, 182, 145));
         jScrollPane1.setViewportView(tblRequest);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, 690, 180));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 310, 690, 180));
 
-        btnAddVaccine.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnAddVaccine.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnAddVaccine.setText("Add Vaccine");
         btnAddVaccine.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddVaccineActionPerformed(evt);
             }
         });
-        add(btnAddVaccine, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 410, -1, -1));
+        add(btnAddVaccine, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 570, -1, -1));
 
-        btnDelete.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnDelete.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnDelete.setText("Delete Vaccine");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteActionPerformed(evt);
             }
         });
-        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 410, -1, -1));
+        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 570, -1, -1));
 
-        lblText.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblText.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblText.setForeground(new java.awt.Color(255, 255, 255));
         lblText.setText("Currently Logged in as:");
-        add(lblText, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, -1, 30));
+        add(lblText, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 250, -1, 30));
 
-        lblValue.setFont(new java.awt.Font("Optima", 1, 22)); // NOI18N
-        lblValue.setForeground(new java.awt.Color(97, 212, 195));
+        lblValue.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lblValue.setForeground(new java.awt.Color(124, 169, 130));
         lblValue.setText("<value>");
-        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, 230, 30));
-
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/MANUFACTURINGWORKAREA.png"))); // NOI18N
+        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 250, 230, 30));
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 0, 90, 850));
+
+        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("MANUFACTURE AREA");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 50, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSendSampleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSendSampleActionPerformed
@@ -260,6 +265,7 @@ public class ManufactureAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnAddVaccine;
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnSendSample;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblText;
     private javax.swing.JLabel lblTitle;

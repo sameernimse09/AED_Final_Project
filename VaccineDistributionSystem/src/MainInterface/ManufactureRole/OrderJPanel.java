@@ -67,11 +67,12 @@ public class OrderJPanel extends javax.swing.JPanel {
         btnReject = new javax.swing.JButton();
         separatorLine = new javax.swing.JSeparator();
 
-        setBackground(new java.awt.Color(36, 47, 65));
+        setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1440, 848));
         setPreferredSize(new java.awt.Dimension(1440, 848));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        tblOrders.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         tblOrders.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -87,38 +88,38 @@ public class OrderJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 50, 375, 275));
 
-        lblComment.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblComment.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblComment.setForeground(new java.awt.Color(255, 255, 255));
         lblComment.setText("Comments:");
-        add(lblComment, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 350, -1, -1));
+        add(lblComment, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 350, -1, -1));
 
-        txtComment.setBackground(new java.awt.Color(36, 47, 65));
-        txtComment.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        txtComment.setBackground(new java.awt.Color(11, 49, 48));
+        txtComment.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         txtComment.setBorder(null);
-        add(txtComment, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 350, 230, -1));
+        add(txtComment, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 340, 230, -1));
 
-        btnApprove.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnApprove.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnApprove.setText("Approve");
         btnApprove.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnApproveActionPerformed(evt);
             }
         });
-        add(btnApprove, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 400, -1, -1));
+        add(btnApprove, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 410, -1, -1));
 
-        btnReject.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnReject.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnReject.setText("Reject");
         btnReject.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRejectActionPerformed(evt);
             }
         });
-        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 400, -1, -1));
+        add(btnReject, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 410, -1, -1));
 
         separatorLine.setForeground(new java.awt.Color(255, 255, 255));
         separatorLine.setMinimumSize(new java.awt.Dimension(1, 12));
         separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
-        add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 370, 220, 10));
+        add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 370, 220, 10));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnApproveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApproveActionPerformed
