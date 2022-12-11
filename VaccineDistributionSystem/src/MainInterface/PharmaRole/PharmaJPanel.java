@@ -126,7 +126,7 @@ public class PharmaJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(this, "Please select a request");
             return;
         }
-        WorkRequest r = (WorkRequest) tblMedList.getModel().getValueAt(selectedRow, 0);
+        WorkReq r = (WorkReq) tblMedList.getModel().getValueAt(selectedRow, 0);
         r.setStatus("Available");
         populateTable();
         JOptionPane.showMessageDialog(this, "Made Available");
@@ -139,7 +139,7 @@ public class PharmaJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(this, "Please select a request");
             return;
         }
-        WorkRequest r = (WorkRequest) tblMedList.getModel().getValueAt(selectedRow, 0);
+        WorkReq r = (WorkReq) tblMedList.getModel().getValueAt(selectedRow, 0);
         r.setStatus("Not available");
         populateTable();
         JOptionPane.showMessageDialog(this, "Not Available");
@@ -161,7 +161,7 @@ public class PharmaJPanel extends javax.swing.JPanel {
         model.setRowCount(0);
         
             System.out.println("Outside for");
-        for(WorkRequest wr : account.getWorkQueue().getWorkRequestList()){
+        for(WorkReq wr : account.getWorkQueue().getWorkRequestList()){
             Object[] row = new Object[5];
             System.out.println("inside for");
 //            if(wr instanceof prescribeMedicine){
@@ -170,7 +170,7 @@ public class PharmaJPanel extends javax.swing.JPanel {
                 row[0] = wr;
                 row[1] = wr.getSender().getUsername();
                 row[2] = wr.getReceiver().getUsername();
-                String ml = ((prescribeMedicine) wr).getMedList();
+                String ml = ((prescribeMeds) wr).getMedList();
                 row[3] = ml;
                 row[4] = wr.getStatus();
                 model.addRow(row);

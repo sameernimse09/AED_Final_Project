@@ -207,7 +207,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
          Component[] componentArray = userProcessContainer.getComponents();
          try{
              Component component = componentArray[componentArray.length - 1];
-             SystemAdminWorkAreaJPanel sysAdminwjp = (SystemAdminWorkAreaJPanel) component;
+             ManageSystemAdminJPanel sysAdminwjp = (ManageSystemAdminJPanel) component;
          }catch(Exception e){
              System.out.println("Exception caught!");
          }
