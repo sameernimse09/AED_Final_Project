@@ -72,6 +72,7 @@ public class PersonAreaJPanel extends javax.swing.JPanel {
         lblText = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         PharmajTable = new javax.swing.JTable();
+        jLabel1 = new javax.swing.JLabel();
 
         jLabel3.setText("jLabel3");
 
@@ -79,30 +80,31 @@ public class PersonAreaJPanel extends javax.swing.JPanel {
 
         jTextField2.setText("jTextField2");
 
-        setBackground(new java.awt.Color(36, 47, 65));
+        setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1440, 848));
         setPreferredSize(new java.awt.Dimension(1440, 848));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnVaccine.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnVaccine.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnVaccine.setText("Schedule Vaccination");
         btnVaccine.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVaccineActionPerformed(evt);
             }
         });
-        add(btnVaccine, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 300, -1, -1));
+        add(btnVaccine, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 230, -1, -1));
 
-        btnAppointment.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnAppointment.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnAppointment.setText("Schedule Appointment");
         btnAppointment.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAppointmentActionPerformed(evt);
             }
         });
-        add(btnAppointment, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 570, -1, -1));
+        add(btnAppointment, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 420, -1, -1));
 
-        tblVaccineRequest.setBackground(new java.awt.Color(97, 212, 195));
+        tblVaccineRequest.setBackground(new java.awt.Color(124, 169, 130));
+        tblVaccineRequest.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         tblVaccineRequest.setForeground(new java.awt.Color(36, 47, 65));
         tblVaccineRequest.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -117,12 +119,13 @@ public class PersonAreaJPanel extends javax.swing.JPanel {
                 "Sender", "Vaccination Date", "Status", "Distribution Center", "Vaccine Name"
             }
         ));
-        tblVaccineRequest.setGridColor(new java.awt.Color(97, 212, 195));
+        tblVaccineRequest.setGridColor(new java.awt.Color(4, 182, 145));
         jScrollPane2.setViewportView(tblVaccineRequest);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, 610, 140));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 610, 140));
 
-        tblAppoinment.setBackground(new java.awt.Color(97, 212, 195));
+        tblAppoinment.setBackground(new java.awt.Color(124, 169, 130));
+        tblAppoinment.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         tblAppoinment.setForeground(new java.awt.Color(36, 47, 65));
         tblAppoinment.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -137,25 +140,24 @@ public class PersonAreaJPanel extends javax.swing.JPanel {
                 "Sender", "Receiver", "Status", "Date"
             }
         ));
-        tblAppoinment.setGridColor(new java.awt.Color(97, 212, 195));
+        tblAppoinment.setGridColor(new java.awt.Color(4, 182, 145));
         jScrollPane1.setViewportView(tblAppoinment);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 400, 420, 140));
-
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/PERSONWORKAREA.png"))); // NOI18N
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 370, 420, 140));
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 0, 100, 850));
 
-        lblValue.setFont(new java.awt.Font("Optima", 1, 22)); // NOI18N
-        lblValue.setForeground(new java.awt.Color(97, 212, 195));
+        lblValue.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lblValue.setForeground(new java.awt.Color(124, 169, 130));
         lblValue.setText("<value>");
-        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, 230, 30));
+        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 120, 230, 30));
 
-        lblText.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblText.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblText.setForeground(new java.awt.Color(255, 255, 255));
         lblText.setText("Currently Logged in as:");
-        add(lblText, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, -1, 30));
+        add(lblText, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, -1, 30));
 
-        PharmajTable.setBackground(new java.awt.Color(97, 212, 195));
+        PharmajTable.setBackground(new java.awt.Color(124, 169, 130));
+        PharmajTable.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         PharmajTable.setForeground(new java.awt.Color(36, 47, 65));
         PharmajTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -170,10 +172,15 @@ public class PersonAreaJPanel extends javax.swing.JPanel {
                 "Person", "Doctor", "Pharmacy", "Medicine List", "Availability"
             }
         ));
-        PharmajTable.setGridColor(new java.awt.Color(97, 212, 195));
+        PharmajTable.setGridColor(new java.awt.Color(4, 182, 145));
         jScrollPane3.setViewportView(PharmajTable);
 
-        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 670, 500, 140));
+        add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 530, 500, 140));
+
+        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("PERSON AREA");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 20, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVaccineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVaccineActionPerformed
@@ -216,6 +223,7 @@ public class PersonAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JTable PharmajTable;
     private javax.swing.JButton btnAppointment;
     private javax.swing.JButton btnVaccine;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
