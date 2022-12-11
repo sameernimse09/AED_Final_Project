@@ -117,13 +117,15 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
         cmbOrganization = new javax.swing.JComboBox();
         lblOrganization = new javax.swing.JLabel();
         lblTitle = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(36, 47, 65));
+        setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1190, 848));
         setPreferredSize(new java.awt.Dimension(1190, 848));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tblOrganization.setBackground(new java.awt.Color(97, 212, 195));
+        tblOrganization.setBackground(new java.awt.Color(124, 169, 130));
+        tblOrganization.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         tblOrganization.setForeground(new java.awt.Color(36, 47, 65));
         tblOrganization.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -155,7 +157,7 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        tblOrganization.setGridColor(new java.awt.Color(97, 212, 195));
+        tblOrganization.setGridColor(new java.awt.Color(4, 182, 145));
         tblOrganization.setRowHeight(20);
         jScrollPane1.setViewportView(tblOrganization);
         if (tblOrganization.getColumnModel().getColumnCount() > 0) {
@@ -163,28 +165,31 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
             tblOrganization.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 60, 480, 180));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 480, 180));
 
-        btnAdd.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnAdd.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnAdd.setText("Add Organization");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddActionPerformed(evt);
             }
         });
-        add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 460, -1, -1));
+        add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 530, -1, -1));
 
-        cmbOrganization.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        cmbOrganization.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         cmbOrganization.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(cmbOrganization, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 330, 240, -1));
+        add(cmbOrganization, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 410, 240, -1));
 
-        lblOrganization.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblOrganization.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblOrganization.setForeground(new java.awt.Color(255, 255, 255));
         lblOrganization.setText("Organization Type:");
-        add(lblOrganization, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 340, -1, -1));
-
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ORGANIZATIONS.png"))); // NOI18N
+        add(lblOrganization, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 410, -1, -1));
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 0, 100, 850));
+
+        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("ORGANIZATIONS");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 40, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
@@ -201,6 +206,7 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdd;
     private javax.swing.JComboBox cmbOrganization;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblOrganization;
     private javax.swing.JLabel lblTitle;
