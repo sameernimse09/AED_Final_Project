@@ -149,7 +149,7 @@ public class PersonAreaJPanel extends javax.swing.JPanel {
         lblValue.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         lblValue.setForeground(new java.awt.Color(124, 169, 130));
         lblValue.setText("<value>");
-        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 120, 230, 30));
+        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, 230, 30));
 
         lblText.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblText.setForeground(new java.awt.Color(255, 255, 255));

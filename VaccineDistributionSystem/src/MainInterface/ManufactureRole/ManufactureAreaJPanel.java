@@ -141,7 +141,7 @@ public class ManufactureAreaJPanel extends javax.swing.JPanel {
         lblValue.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         lblValue.setForeground(new java.awt.Color(124, 169, 130));
         lblValue.setText("<value>");
-        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 250, 230, 30));
+        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 250, 230, 30));
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 0, 90, 850));
 
         jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N

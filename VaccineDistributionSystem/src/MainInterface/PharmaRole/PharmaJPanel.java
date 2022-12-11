@@ -117,7 +117,7 @@ public class PharmaJPanel extends javax.swing.JPanel {
         lblValue.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         lblValue.setForeground(new java.awt.Color(124, 169, 130));
         lblValue.setText("<value>");
-        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 230, 30));
+        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, 230, 30));
 
         jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
