@@ -43,34 +43,34 @@ public class ManageSystemAdminJPanel extends javax.swing.JPanel {
         onePanel = new javax.swing.JPanel();
         lblNetwork = new javax.swing.JLabel();
         iconNetwork = new javax.swing.JLabel();
+        lblValue = new javax.swing.JLabel();
+        lblText = new javax.swing.JLabel();
         twoPanel = new javax.swing.JPanel();
         lblEnterprise = new javax.swing.JLabel();
         iconEnterprise = new javax.swing.JLabel();
         threePanel = new javax.swing.JPanel();
         lblProfile = new javax.swing.JLabel();
         iconAdmin = new javax.swing.JLabel();
-        lblValue = new javax.swing.JLabel();
-        lblText = new javax.swing.JLabel();
         cardWorkPanel = new javax.swing.JPanel();
         lblTitle = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(36, 47, 65));
+        setBackground(new java.awt.Color(11, 49, 48));
         setPreferredSize(new java.awt.Dimension(1440, 848));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        background.setBackground(new java.awt.Color(23, 35, 51));
+        background.setBackground(new java.awt.Color(11, 49, 48));
         background.setMaximumSize(new java.awt.Dimension(1440, 848));
         background.setMinimumSize(new java.awt.Dimension(1440, 848));
         background.setPreferredSize(new java.awt.Dimension(1440, 848));
         background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        menuPanel.setBackground(new java.awt.Color(36, 47, 65));
+        menuPanel.setBackground(new java.awt.Color(11, 49, 48));
         menuPanel.setMaximumSize(new java.awt.Dimension(250, 848));
         menuPanel.setMinimumSize(new java.awt.Dimension(250, 848));
         menuPanel.setPreferredSize(new java.awt.Dimension(250, 848));
         menuPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        onePanel.setBackground(new java.awt.Color(36, 47, 65));
+        onePanel.setBackground(new java.awt.Color(11, 49, 48));
         onePanel.setMinimumSize(new java.awt.Dimension(250, 40));
         onePanel.setPreferredSize(new java.awt.Dimension(250, 40));
         onePanel.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -80,21 +80,34 @@ public class ManageSystemAdminJPanel extends javax.swing.JPanel {
         });
         onePanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblNetwork.setFont(new java.awt.Font("Optima", 1, 16)); // NOI18N
+        lblNetwork.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblNetwork.setForeground(new java.awt.Color(255, 255, 255));
         lblNetwork.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblNetwork.setText("CREATE NETWORK ");
         lblNetwork.setMaximumSize(new java.awt.Dimension(180, 20));
         lblNetwork.setMinimumSize(new java.awt.Dimension(180, 20));
         lblNetwork.setPreferredSize(new java.awt.Dimension(180, 20));
-        onePanel.add(lblNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, 148, -1));
+        onePanel.add(lblNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 148, -1));
 
-        iconNetwork.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/managenetwork.png"))); // NOI18N
-        onePanel.add(iconNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
+        iconNetwork.setBackground(new java.awt.Color(11, 49, 48));
+        iconNetwork.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/network.png"))); // NOI18N
+        iconNetwork.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        iconNetwork.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        onePanel.add(iconNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, 40, 70));
 
-        menuPanel.add(onePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, -1, -1));
+        menuPanel.add(onePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 410, 100));
 
-        twoPanel.setBackground(new java.awt.Color(36, 47, 65));
+        lblValue.setFont(new java.awt.Font("Calibri", 1, 22)); // NOI18N
+        lblValue.setForeground(new java.awt.Color(124, 169, 130));
+        lblValue.setText("<value>");
+        menuPanel.add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 530, 230, 30));
+
+        lblText.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        lblText.setForeground(new java.awt.Color(255, 255, 255));
+        lblText.setText("Currently Logged in as:");
+        menuPanel.add(lblText, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 500, -1, -1));
+
+        twoPanel.setBackground(new java.awt.Color(11, 49, 48));
         twoPanel.setMinimumSize(new java.awt.Dimension(250, 40));
         twoPanel.setPreferredSize(new java.awt.Dimension(250, 40));
         twoPanel.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -104,21 +117,21 @@ public class ManageSystemAdminJPanel extends javax.swing.JPanel {
         });
         twoPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblEnterprise.setFont(new java.awt.Font("Optima", 1, 16)); // NOI18N
+        lblEnterprise.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblEnterprise.setForeground(new java.awt.Color(255, 255, 255));
         lblEnterprise.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblEnterprise.setText("CREATE ENTERPRISE");
         lblEnterprise.setMaximumSize(new java.awt.Dimension(180, 20));
         lblEnterprise.setMinimumSize(new java.awt.Dimension(180, 20));
         lblEnterprise.setPreferredSize(new java.awt.Dimension(180, 20));
-        twoPanel.add(lblEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, 152, -1));
+        twoPanel.add(lblEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 152, -1));
 
-        iconEnterprise.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/manageenterprise.png"))); // NOI18N
-        twoPanel.add(iconEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
+        iconEnterprise.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/enterprise.png"))); // NOI18N
+        twoPanel.add(iconEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, -1, 50));
 
-        menuPanel.add(twoPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, -1, -1));
+        menuPanel.add(twoPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 410, 100));
 
-        threePanel.setBackground(new java.awt.Color(36, 47, 65));
+        threePanel.setBackground(new java.awt.Color(11, 49, 48));
         threePanel.setMinimumSize(new java.awt.Dimension(250, 40));
         threePanel.setPreferredSize(new java.awt.Dimension(250, 40));
         threePanel.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -128,30 +141,20 @@ public class ManageSystemAdminJPanel extends javax.swing.JPanel {
         });
         threePanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblProfile.setFont(new java.awt.Font("Optima", 1, 16)); // NOI18N
+        lblProfile.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblProfile.setForeground(new java.awt.Color(255, 255, 255));
         lblProfile.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblProfile.setText("CREATE ADMIN PROFILE");
-        threePanel.add(lblProfile, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, -1, 20));
+        threePanel.add(lblProfile, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, -1, 20));
 
-        iconAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/manageadminprofiles.png"))); // NOI18N
-        threePanel.add(iconAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
+        iconAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/admin-profile.png"))); // NOI18N
+        threePanel.add(iconAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, -1, 40));
 
-        menuPanel.add(threePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, -1, -1));
+        menuPanel.add(threePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 410, 100));
 
-        lblValue.setFont(new java.awt.Font("Optima", 1, 22)); // NOI18N
-        lblValue.setForeground(new java.awt.Color(97, 212, 195));
-        lblValue.setText("<value>");
-        menuPanel.add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 230, 30));
+        background.add(menuPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, -1));
 
-        lblText.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
-        lblText.setForeground(new java.awt.Color(255, 255, 255));
-        lblText.setText("Currently Logged in as:");
-        menuPanel.add(lblText, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, -1, -1));
-
-        background.add(menuPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        cardWorkPanel.setBackground(new java.awt.Color(36, 47, 65));
+        cardWorkPanel.setBackground(new java.awt.Color(124, 169, 130));
         cardWorkPanel.setMinimumSize(new java.awt.Dimension(1190, 848));
         cardWorkPanel.setPreferredSize(new java.awt.Dimension(1190, 848));
         cardWorkPanel.setLayout(new java.awt.CardLayout());
@@ -160,7 +163,7 @@ public class ManageSystemAdminJPanel extends javax.swing.JPanel {
         lblTitle.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         cardWorkPanel.add(lblTitle, "card2");
 
-        background.add(cardWorkPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, -1, -1));
+        background.add(cardWorkPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 0, 1030, -1));
 
         add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
