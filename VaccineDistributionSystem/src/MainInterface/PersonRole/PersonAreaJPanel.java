@@ -72,7 +72,6 @@ public class PersonAreaJPanel extends javax.swing.JPanel {
         lblText = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         PharmajTable = new javax.swing.JTable();
-        jLabel1 = new javax.swing.JLabel();
 
         jLabel3.setText("jLabel3");
 
@@ -144,7 +143,9 @@ public class PersonAreaJPanel extends javax.swing.JPanel {
         jScrollPane1.setViewportView(tblAppoinment);
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 370, 420, 140));
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 0, 100, 850));
+
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/PERSONWORKAREA.png"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 0, 130, 850));
 
         lblValue.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         lblValue.setForeground(new java.awt.Color(124, 169, 130));
@@ -176,11 +177,6 @@ public class PersonAreaJPanel extends javax.swing.JPanel {
         jScrollPane3.setViewportView(PharmajTable);
 
         add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 530, 500, 140));
-
-        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("PERSON AREA");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 20, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVaccineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVaccineActionPerformed
@@ -223,7 +219,6 @@ public class PersonAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JTable PharmajTable;
     private javax.swing.JButton btnAppointment;
     private javax.swing.JButton btnVaccine;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;

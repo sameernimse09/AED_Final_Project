@@ -104,7 +104,6 @@ public class ManageUserAccJPanel extends javax.swing.JPanel {
         separatorLine1 = new javax.swing.JSeparator();
         separatorLine2 = new javax.swing.JSeparator();
         lblTitle = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1190, 848));
@@ -224,12 +223,9 @@ public class ManageUserAccJPanel extends javax.swing.JPanel {
         separatorLine2.setMinimumSize(new java.awt.Dimension(1, 12));
         separatorLine2.setPreferredSize(new java.awt.Dimension(1, 12));
         add(separatorLine2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 370, 220, 10));
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 0, 100, 850));
 
-        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("USER ACCOUNTS");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 30, -1, -1));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/USERACCOUNTS.png"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 0, 120, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateActionPerformed
@@ -271,7 +267,6 @@ public class ManageUserAccJPanel extends javax.swing.JPanel {
     private javax.swing.JComboBox cmbEmployee;
     private javax.swing.JComboBox cmbOrganization;
     private javax.swing.JComboBox cmbRole;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblEmployee;
     private javax.swing.JLabel lblOrganization;

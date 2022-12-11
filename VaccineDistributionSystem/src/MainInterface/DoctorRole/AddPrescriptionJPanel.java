@@ -59,7 +59,6 @@ public class AddPrescriptionJPanel extends javax.swing.JPanel {
         btnSubmit = new javax.swing.JButton();
         iconBack = new javax.swing.JLabel();
         lblTitle = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1440, 848));
@@ -97,12 +96,9 @@ public class AddPrescriptionJPanel extends javax.swing.JPanel {
             }
         });
         add(iconBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 620, -1, -1));
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 0, 100, 850));
 
-        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("DOCTOR AREA");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 40, -1, -1));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/DOCTORWORKAREA.png"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1320, 0, 120, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
@@ -164,7 +160,6 @@ public class AddPrescriptionJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSubmit;
     private javax.swing.JLabel iconBack;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblMedList;
     private javax.swing.JLabel lblTitle;

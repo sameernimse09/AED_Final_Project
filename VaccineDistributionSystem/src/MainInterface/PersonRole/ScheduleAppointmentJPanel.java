@@ -75,7 +75,6 @@ public class ScheduleAppointmentJPanel extends javax.swing.JPanel {
         separatorLine = new javax.swing.JSeparator();
         lblTitle = new javax.swing.JLabel();
         iconBack = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -117,7 +116,9 @@ public class ScheduleAppointmentJPanel extends javax.swing.JPanel {
         separatorLine.setMinimumSize(new java.awt.Dimension(1, 12));
         separatorLine.setPreferredSize(new java.awt.Dimension(1, 12));
         add(separatorLine, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 260, 280, -1));
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 0, 100, 850));
+
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/PERSONWORKAREA.png"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1320, 0, 120, 850));
 
         iconBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/back.png"))); // NOI18N
         iconBack.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -126,11 +127,6 @@ public class ScheduleAppointmentJPanel extends javax.swing.JPanel {
             }
         });
         add(iconBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 640, 70, 70));
-
-        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("PERSON AREA");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 70, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequestActionPerformed
@@ -201,7 +197,6 @@ public class ScheduleAppointmentJPanel extends javax.swing.JPanel {
     private javax.swing.JComboBox<String> cmbHospital;
     private javax.swing.JLabel iconBack;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblEmail;
     private javax.swing.JLabel lblHospital;
     private javax.swing.JLabel lblTitle;

@@ -69,7 +69,6 @@ public class HealthAreaJPanel extends javax.swing.JPanel {
         lblTitle = new javax.swing.JLabel();
         lblText = new javax.swing.JLabel();
         lblValue = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1440, 848));
@@ -140,7 +139,9 @@ public class HealthAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(btnChart, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 730, -1, -1));
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 0, 100, 850));
+
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/HEALTHWORKAREA.png"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1320, 0, 120, 850));
 
         lblText.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblText.setForeground(new java.awt.Color(255, 255, 255));
@@ -151,11 +152,6 @@ public class HealthAreaJPanel extends javax.swing.JPanel {
         lblValue.setForeground(new java.awt.Color(124, 169, 130));
         lblValue.setText("<value>");
         add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 110, 230, 30));
-
-        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("HEALTH AREA");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 40, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnChartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChartActionPerformed
@@ -174,7 +170,6 @@ public class HealthAreaJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnChart;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lblApproved;

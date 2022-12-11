@@ -84,7 +84,6 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
         lblText = new javax.swing.JLabel();
         lblValue = new javax.swing.JLabel();
         VaccinejDateChooser = new com.toedter.calendar.JDateChooser();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1440, 848));
@@ -161,7 +160,9 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
         separatorLine1.setMinimumSize(new java.awt.Dimension(1, 12));
         separatorLine1.setPreferredSize(new java.awt.Dimension(1, 12));
         add(separatorLine1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 340, 220, 10));
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 0, 100, 850));
+
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/DISTRIBUTORWORKAREA.png"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1330, 0, 110, 850));
 
         lblText.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblText.setForeground(new java.awt.Color(255, 255, 255));
@@ -173,11 +174,6 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
         lblValue.setText("<value>");
         add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, 230, 30));
         add(VaccinejDateChooser, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 430, -1, -1));
-
-        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("DISTRIBUTOR AREA");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 30, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnScheduleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnScheduleActionPerformed
@@ -272,7 +268,6 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private com.toedter.calendar.JDateChooser VaccinejDateChooser;
     private javax.swing.JButton btnSchedule;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lblText;
