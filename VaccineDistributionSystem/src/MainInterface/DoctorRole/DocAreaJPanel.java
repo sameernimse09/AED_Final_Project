@@ -69,6 +69,7 @@ public class DocAreaJPanel extends javax.swing.JPanel {
         lblText = new javax.swing.JLabel();
         lblValue = new javax.swing.JLabel();
         lblTitle = new javax.swing.JLabel();
+        appointmentjDateChooser = new com.toedter.calendar.JDateChooser();
 
         setBackground(new java.awt.Color(36, 47, 65));
         setMinimumSize(new java.awt.Dimension(1440, 848));
@@ -145,6 +146,7 @@ public class DocAreaJPanel extends javax.swing.JPanel {
 
         lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/DOCTORWORKAREA.png"))); // NOI18N
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 0, 100, 850));
+        add(appointmentjDateChooser, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 350, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnTestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTestActionPerformed
@@ -286,6 +288,7 @@ public class DocAreaJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_btnRejectActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private com.toedter.calendar.JDateChooser appointmentjDateChooser;
     private javax.swing.JButton btnApprove;
     private javax.swing.JButton btnPrescribeMed;
     private javax.swing.JButton btnReject;
