@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
+
 /**
  *
  * @author Sameer Nimse
@@ -41,9 +42,7 @@ public class ReqVaccineJPanel extends javax.swing.JPanel {
     private UserAccount userAccount;
     private ArrayList<OrderInventory> inventory = new ArrayList<>();
     
-    /**
-     * Creates new form RequestVaccineJPanel
-     */
+
     
     public ReqVaccineJPanel(OrgDirectory directory, JPanel userProcessContainer, OrderOrganization organization, Enterprise enterprise, UserAccount userAccount) {
         initComponents();

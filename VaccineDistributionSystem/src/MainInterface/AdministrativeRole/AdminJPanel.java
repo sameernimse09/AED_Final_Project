@@ -165,7 +165,7 @@ public class AdminJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         setColor(twoPanel);
         resetColor(new JPanel[]{onePanel,threePanel});
-        ManageEmployeeJPanel manageEmployeeJPanel = new ManageEmployeeJPanel(cardWorkPanel, enterprise.getOrganizationDirectory());
+        ManageEmpJPanel manageEmployeeJPanel = new ManageEmpJPanel(cardWorkPanel, enterprise.getOrganizationDirectory());
         cardWorkPanel.add("manageEmployeeJPanel", manageEmployeeJPanel);
         CardLayout layout = (CardLayout) cardWorkPanel.getLayout();
         layout.next(cardWorkPanel);
@@ -175,7 +175,7 @@ public class AdminJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         setColor(onePanel);
         resetColor(new JPanel[]{twoPanel,threePanel});
-        ManageOrganizationJPanel manageOrganizationJPanel = new ManageOrganizationJPanel(cardWorkPanel, enterprise.getOrganizationDirectory(),account,enterprise);
+        ManageOrgJPanel manageOrganizationJPanel = new ManageOrgJPanel(cardWorkPanel, enterprise.getOrganizationDirectory(),account,enterprise);
         cardWorkPanel.add("manageOrganizationJPanel", manageOrganizationJPanel);
         CardLayout layout = (CardLayout) cardWorkPanel.getLayout();
         layout.next(cardWorkPanel);
@@ -185,7 +185,7 @@ public class AdminJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         setColor(threePanel);
         resetColor(new JPanel[]{onePanel,twoPanel});
-        ManageUserAccountJPanel muajp = new ManageUserAccountJPanel(cardWorkPanel, enterprise);
+        ManageUserAccJPanel muajp = new ManageUserAccJPanel(cardWorkPanel, enterprise);
         cardWorkPanel.add("ManageUserAccountJPanel", muajp);
         CardLayout layout = (CardLayout) cardWorkPanel.getLayout();
         layout.next(cardWorkPanel);
