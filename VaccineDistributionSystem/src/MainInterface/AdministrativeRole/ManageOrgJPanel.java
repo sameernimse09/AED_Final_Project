@@ -158,7 +158,6 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
             }
         });
         tblOrganization.setGridColor(new java.awt.Color(4, 182, 145));
-        tblOrganization.setRowHeight(20);
         jScrollPane1.setViewportView(tblOrganization);
         if (tblOrganization.getColumnModel().getColumnCount() > 0) {
             tblOrganization.getColumnModel().getColumn(0).setResizable(false);
@@ -183,7 +182,7 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
         lblOrganization.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblOrganization.setForeground(new java.awt.Color(255, 255, 255));
         lblOrganization.setText("Organization Type:");
-        add(lblOrganization, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 410, -1, -1));
+        add(lblOrganization, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 410, -1, -1));
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 0, 100, 850));
 
         jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N

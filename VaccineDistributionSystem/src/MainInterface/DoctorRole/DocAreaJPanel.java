@@ -84,7 +84,7 @@ public class DocAreaJPanel extends javax.swing.JPanel {
                 btnTestActionPerformed(evt);
             }
         });
-        add(btnTest, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 740, 170, -1));
+        add(btnTest, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 740, 190, -1));
 
         tblRequest.setBackground(new java.awt.Color(124, 169, 130));
         tblRequest.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
@@ -144,9 +144,9 @@ public class DocAreaJPanel extends javax.swing.JPanel {
         lblValue.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         lblValue.setForeground(new java.awt.Color(124, 169, 130));
         lblValue.setText("<value>");
-        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 230, 30));
+        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 230, 30));
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 0, 100, 850));
-        add(appointmentjDateChooser, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 350, -1, -1));
+        add(appointmentjDateChooser, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 340, 130, -1));
 
         jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));

@@ -126,7 +126,6 @@ public class ManageEmpJPanel extends javax.swing.JPanel {
             }
         });
         tblOrganization.setGridColor(new java.awt.Color(4, 182, 145));
-        tblOrganization.setRowHeight(20);
         jScrollPane1.setViewportView(tblOrganization);
         if (tblOrganization.getColumnModel().getColumnCount() > 0) {
             tblOrganization.getColumnModel().getColumn(0).setResizable(false);
@@ -156,7 +155,7 @@ public class ManageEmpJPanel extends javax.swing.JPanel {
         lblOrganization.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblOrganization.setForeground(new java.awt.Color(255, 255, 255));
         lblOrganization.setText("Organization:");
-        add(lblOrganization, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, -1, -1));
+        add(lblOrganization, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 160, -1, -1));
 
         lblName.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblName.setForeground(new java.awt.Color(255, 255, 255));
@@ -181,7 +180,7 @@ public class ManageEmpJPanel extends javax.swing.JPanel {
         lblSelectOrg.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblSelectOrg.setForeground(new java.awt.Color(255, 255, 255));
         lblSelectOrg.setText("Select organization to add new employee in:");
-        add(lblSelectOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 460, -1, -1));
+        add(lblSelectOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 450, -1, -1));
 
         separatorLine2.setForeground(new java.awt.Color(255, 255, 255));
         separatorLine2.setMinimumSize(new java.awt.Dimension(1, 12));

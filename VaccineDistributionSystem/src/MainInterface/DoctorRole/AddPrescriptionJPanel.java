@@ -69,7 +69,7 @@ public class AddPrescriptionJPanel extends javax.swing.JPanel {
         lblMedList.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblMedList.setForeground(new java.awt.Color(255, 255, 255));
         lblMedList.setText("Medicine List:");
-        add(lblMedList, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, -1, -1));
+        add(lblMedList, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, -1, -1));
 
         txtareaMedList.setBackground(new java.awt.Color(11, 49, 48));
         txtareaMedList.setColumns(20);
@@ -79,7 +79,7 @@ public class AddPrescriptionJPanel extends javax.swing.JPanel {
         txtareaMedList.setBorder(null);
         jScrollPane1.setViewportView(txtareaMedList);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 140, -1, -1));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, -1, -1));
 
         btnSubmit.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnSubmit.setText("Submit");

@@ -158,7 +158,6 @@ public class ManageUserAccJPanel extends javax.swing.JPanel {
             }
         });
         tblUser.setGridColor(new java.awt.Color(4, 182, 145));
-        tblUser.setRowHeight(20);
         jScrollPane1.setViewportView(tblUser);
         if (tblUser.getColumnModel().getColumnCount() > 0) {
             tblUser.getColumnModel().getColumn(0).setResizable(false);
@@ -185,7 +184,7 @@ public class ManageUserAccJPanel extends javax.swing.JPanel {
 
         cmbEmployee.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         cmbEmployee.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(cmbEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 210, 300, -1));
+        add(cmbEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 210, 300, -1));
 
         lblOrganization.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblOrganization.setForeground(new java.awt.Color(255, 255, 255));
@@ -199,12 +198,12 @@ public class ManageUserAccJPanel extends javax.swing.JPanel {
                 cmbOrganizationActionPerformed(evt);
             }
         });
-        add(cmbOrganization, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, 300, -1));
+        add(cmbOrganization, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, 300, -1));
 
         lblRole.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblRole.setForeground(new java.awt.Color(255, 255, 255));
         lblRole.setText("Role:");
-        add(lblRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 260, 40, -1));
+        add(lblRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 260, 60, -1));
 
         cmbRole.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         cmbRole.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -213,7 +212,7 @@ public class ManageUserAccJPanel extends javax.swing.JPanel {
                 cmbRoleActionPerformed(evt);
             }
         });
-        add(cmbRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 260, 300, -1));
+        add(cmbRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 260, 300, -1));
 
         separatorLine1.setForeground(new java.awt.Color(255, 255, 255));
         separatorLine1.setMinimumSize(new java.awt.Dimension(1, 12));
