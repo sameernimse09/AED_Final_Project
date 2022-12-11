@@ -112,13 +112,15 @@ public class LabJPanel extends javax.swing.JPanel {
         lblPulse = new javax.swing.JLabel();
         barPulse = new javax.swing.JProgressBar();
         barBloodPressure = new javax.swing.JProgressBar();
+        jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(36, 47, 65));
+        setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1440, 848));
         setPreferredSize(new java.awt.Dimension(1440, 848));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTable1.setBackground(new java.awt.Color(97, 212, 195));
+        jTable1.setBackground(new java.awt.Color(124, 169, 130));
+        jTable1.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jTable1.setForeground(new java.awt.Color(36, 47, 65));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -131,12 +133,12 @@ public class LabJPanel extends javax.swing.JPanel {
                 "Message", "Sender", "Sender Email", "Receiver", "Status", "Result"
             }
         ));
-        jTable1.setGridColor(new java.awt.Color(97, 212, 195));
+        jTable1.setGridColor(new java.awt.Color(4, 182, 145));
         jScrollPane1.setViewportView(jTable1);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, 480, 100));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, 480, 100));
 
-        btnSubmit.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnSubmit.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnSubmit.setText("Submit Result to Doctor");
         btnSubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,8 +147,8 @@ public class LabJPanel extends javax.swing.JPanel {
         });
         add(btnSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 530, -1, -1));
 
-        txtSubmitResult.setBackground(new java.awt.Color(36, 47, 65));
-        txtSubmitResult.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        txtSubmitResult.setBackground(new java.awt.Color(11, 49, 48));
+        txtSubmitResult.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         txtSubmitResult.setForeground(new java.awt.Color(255, 255, 255));
         txtSubmitResult.setBorder(null);
         txtSubmitResult.addActionListener(new java.awt.event.ActionListener() {
@@ -156,27 +158,27 @@ public class LabJPanel extends javax.swing.JPanel {
         });
         add(txtSubmitResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 530, 220, -1));
 
-        lblQ1.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblQ1.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblQ1.setForeground(new java.awt.Color(255, 255, 255));
         lblQ1.setText("Are the Vital Signs of the person completely normal? ");
         add(lblQ1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, -1, -1));
 
-        lblQ2.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblQ2.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblQ2.setForeground(new java.awt.Color(255, 255, 255));
         lblQ2.setText("Has the patient completed both the doses?");
         add(lblQ2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 360, -1));
 
-        lblQ3.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblQ3.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblQ3.setForeground(new java.awt.Color(255, 255, 255));
         lblQ3.setText("Does the patient have cold, cough?");
         add(lblQ3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 360, -1));
 
-        lblQ4.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblQ4.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblQ4.setForeground(new java.awt.Color(255, 255, 255));
         lblQ4.setText("Does the patient have a normal temperature? ");
         add(lblQ4, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 170, 360, -1));
 
-        vitalYesRadio.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        vitalYesRadio.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         vitalYesRadio.setForeground(new java.awt.Color(255, 255, 255));
         vitalYesRadio.setText("Yes");
         vitalYesRadio.addActionListener(new java.awt.event.ActionListener() {
@@ -186,7 +188,7 @@ public class LabJPanel extends javax.swing.JPanel {
         });
         add(vitalYesRadio, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 170, -1, -1));
 
-        vitalNoRadio.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        vitalNoRadio.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         vitalNoRadio.setForeground(new java.awt.Color(255, 255, 255));
         vitalNoRadio.setText("No");
         vitalNoRadio.addActionListener(new java.awt.event.ActionListener() {
@@ -196,7 +198,7 @@ public class LabJPanel extends javax.swing.JPanel {
         });
         add(vitalNoRadio, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 170, -1, -1));
 
-        dosageYesRadio.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        dosageYesRadio.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         dosageYesRadio.setForeground(new java.awt.Color(255, 255, 255));
         dosageYesRadio.setText("Yes");
         dosageYesRadio.addActionListener(new java.awt.event.ActionListener() {
@@ -206,7 +208,7 @@ public class LabJPanel extends javax.swing.JPanel {
         });
         add(dosageYesRadio, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 200, -1, -1));
 
-        coldYesRadio.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        coldYesRadio.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         coldYesRadio.setForeground(new java.awt.Color(255, 255, 255));
         coldYesRadio.setText("Yes");
         coldYesRadio.addActionListener(new java.awt.event.ActionListener() {
@@ -216,7 +218,7 @@ public class LabJPanel extends javax.swing.JPanel {
         });
         add(coldYesRadio, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 230, -1, -1));
 
-        tempYesRadio.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        tempYesRadio.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         tempYesRadio.setForeground(new java.awt.Color(255, 255, 255));
         tempYesRadio.setText("Yes");
         tempYesRadio.addActionListener(new java.awt.event.ActionListener() {
@@ -226,7 +228,7 @@ public class LabJPanel extends javax.swing.JPanel {
         });
         add(tempYesRadio, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 170, -1, -1));
 
-        dosageNoRadio.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        dosageNoRadio.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         dosageNoRadio.setForeground(new java.awt.Color(255, 255, 255));
         dosageNoRadio.setText("No");
         dosageNoRadio.addActionListener(new java.awt.event.ActionListener() {
@@ -236,7 +238,7 @@ public class LabJPanel extends javax.swing.JPanel {
         });
         add(dosageNoRadio, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 200, -1, -1));
 
-        coldNoRadio.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        coldNoRadio.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         coldNoRadio.setForeground(new java.awt.Color(255, 255, 255));
         coldNoRadio.setText("No");
         coldNoRadio.addActionListener(new java.awt.event.ActionListener() {
@@ -246,7 +248,7 @@ public class LabJPanel extends javax.swing.JPanel {
         });
         add(coldNoRadio, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 230, -1, -1));
 
-        tempNoRadio.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        tempNoRadio.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         tempNoRadio.setForeground(new java.awt.Color(255, 255, 255));
         tempNoRadio.setText("No");
         tempNoRadio.addActionListener(new java.awt.event.ActionListener() {
@@ -256,22 +258,22 @@ public class LabJPanel extends javax.swing.JPanel {
         });
         add(tempNoRadio, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 170, -1, -1));
 
-        lblVital.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblVital.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblVital.setForeground(new java.awt.Color(255, 255, 255));
         lblVital.setText("Vital Signs: ");
         add(lblVital, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, -1, -1));
 
-        lblDosage.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblDosage.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblDosage.setForeground(new java.awt.Color(255, 255, 255));
         lblDosage.setText("Dosage: ");
         add(lblDosage, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 330, -1, -1));
 
-        lblCold.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblCold.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblCold.setForeground(new java.awt.Color(255, 255, 255));
         lblCold.setText("Cold/cough: ");
         add(lblCold, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, -1, -1));
 
-        lblTemperature.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblTemperature.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblTemperature.setForeground(new java.awt.Color(255, 255, 255));
         lblTemperature.setText("Temperature: ");
         add(lblTemperature, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 300, -1, -1));
@@ -296,28 +298,28 @@ public class LabJPanel extends javax.swing.JPanel {
         barTemperature.setBorder(null);
         add(barTemperature, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 300, -1, -1));
 
-        lblFinal.setFont(new java.awt.Font("Optima", 1, 16)); // NOI18N
+        lblFinal.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         lblFinal.setForeground(new java.awt.Color(255, 255, 255));
         lblFinal.setText("Final Report : ");
-        add(lblFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 460, -1, -1));
+        add(lblFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 450, -1, -1));
 
         barFinal.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
         barFinal.setForeground(new java.awt.Color(0, 255, 51));
         barFinal.setBorder(null);
         add(barFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 460, 308, -1));
 
-        lblResult.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblResult.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblResult.setForeground(new java.awt.Color(255, 255, 255));
         lblResult.setText("Result : ");
         add(lblResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 450, -1, 20));
 
-        txtResult.setBackground(new java.awt.Color(36, 47, 65));
-        txtResult.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        txtResult.setBackground(new java.awt.Color(11, 49, 48));
+        txtResult.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         txtResult.setForeground(new java.awt.Color(255, 255, 255));
         txtResult.setBorder(null);
         add(txtResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 440, 296, 20));
 
-        btnGenerateReport.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnGenerateReport.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnGenerateReport.setText("Generate Report Result");
         btnGenerateReport.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -326,13 +328,13 @@ public class LabJPanel extends javax.swing.JPanel {
         });
         add(btnGenerateReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 400, -1, -1));
 
-        lblTo.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblTo.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblTo.setForeground(new java.awt.Color(255, 255, 255));
         lblTo.setText("To: ");
         add(lblTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 610, -1, -1));
 
-        txtTo.setBackground(new java.awt.Color(36, 47, 65));
-        txtTo.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        txtTo.setBackground(new java.awt.Color(11, 49, 48));
+        txtTo.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         txtTo.setForeground(new java.awt.Color(255, 255, 255));
         txtTo.setBorder(null);
         txtTo.addActionListener(new java.awt.event.ActionListener() {
@@ -340,11 +342,11 @@ public class LabJPanel extends javax.swing.JPanel {
                 txtToActionPerformed(evt);
             }
         });
-        add(txtTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 610, 290, -1));
+        add(txtTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 600, 290, -1));
 
-        txtareaReport.setBackground(new java.awt.Color(36, 47, 65));
+        txtareaReport.setBackground(new java.awt.Color(11, 49, 48));
         txtareaReport.setColumns(20);
-        txtareaReport.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        txtareaReport.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         txtareaReport.setForeground(new java.awt.Color(255, 255, 255));
         txtareaReport.setRows(5);
         txtareaReport.setBorder(null);
@@ -352,19 +354,19 @@ public class LabJPanel extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 657, 280, 130));
 
-        lblReport.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblReport.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblReport.setForeground(new java.awt.Color(255, 255, 255));
         lblReport.setText("Comments about report:");
         add(lblReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 660, -1, -1));
 
-        btnSendReport.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnSendReport.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnSendReport.setText("Send Report to Person");
         btnSendReport.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSendReportActionPerformed(evt);
             }
         });
-        add(btnSendReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 810, -1, -1));
+        add(btnSendReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 600, -1, -1));
 
         separatorLine.setForeground(new java.awt.Color(255, 255, 255));
         separatorLine.setMinimumSize(new java.awt.Dimension(1, 12));
@@ -380,21 +382,19 @@ public class LabJPanel extends javax.swing.JPanel {
         separatorLine2.setMinimumSize(new java.awt.Dimension(1, 12));
         separatorLine2.setPreferredSize(new java.awt.Dimension(1, 12));
         add(separatorLine2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 630, 220, 10));
-
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/LABWORKAREA.png"))); // NOI18N
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 0, 100, 850));
 
-        lblQ5.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblQ5.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblQ5.setForeground(new java.awt.Color(255, 255, 255));
         lblQ5.setText("Does the patient have a heartbeat/pulse?");
         add(lblQ5, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 200, 360, -1));
 
-        lblQ6.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblQ6.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblQ6.setForeground(new java.awt.Color(255, 255, 255));
         lblQ6.setText("Does the patient have a normal blood pressure?");
         add(lblQ6, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 230, 360, -1));
 
-        pulseYesRadio.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        pulseYesRadio.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         pulseYesRadio.setForeground(new java.awt.Color(255, 255, 255));
         pulseYesRadio.setText("Yes");
         pulseYesRadio.addActionListener(new java.awt.event.ActionListener() {
@@ -404,7 +404,7 @@ public class LabJPanel extends javax.swing.JPanel {
         });
         add(pulseYesRadio, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 200, -1, -1));
 
-        pulseNoRadio1.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        pulseNoRadio1.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         pulseNoRadio1.setForeground(new java.awt.Color(255, 255, 255));
         pulseNoRadio1.setText("No");
         pulseNoRadio1.addActionListener(new java.awt.event.ActionListener() {
@@ -414,7 +414,7 @@ public class LabJPanel extends javax.swing.JPanel {
         });
         add(pulseNoRadio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 200, -1, -1));
 
-        bpYesRadio2.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        bpYesRadio2.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         bpYesRadio2.setForeground(new java.awt.Color(255, 255, 255));
         bpYesRadio2.setText("Yes");
         bpYesRadio2.addActionListener(new java.awt.event.ActionListener() {
@@ -424,7 +424,7 @@ public class LabJPanel extends javax.swing.JPanel {
         });
         add(bpYesRadio2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 230, -1, -1));
 
-        bpNoRadio2.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        bpNoRadio2.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         bpNoRadio2.setForeground(new java.awt.Color(255, 255, 255));
         bpNoRadio2.setText("No");
         bpNoRadio2.addActionListener(new java.awt.event.ActionListener() {
@@ -434,12 +434,12 @@ public class LabJPanel extends javax.swing.JPanel {
         });
         add(bpNoRadio2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 230, -1, -1));
 
-        lblBloodPressure.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblBloodPressure.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblBloodPressure.setForeground(new java.awt.Color(255, 255, 255));
         lblBloodPressure.setText("Blood Pressure:");
-        add(lblBloodPressure, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, 110, -1));
+        add(lblBloodPressure, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 360, 120, -1));
 
-        lblPulse.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        lblPulse.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblPulse.setForeground(new java.awt.Color(255, 255, 255));
         lblPulse.setText("Pulse:");
         add(lblPulse, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 330, -1, -1));
@@ -453,6 +453,11 @@ public class LabJPanel extends javax.swing.JPanel {
         barBloodPressure.setForeground(new java.awt.Color(0, 255, 51));
         barBloodPressure.setBorder(null);
         add(barBloodPressure, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 360, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("LAB AREA");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 30, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
@@ -688,6 +693,7 @@ public class LabJPanel extends javax.swing.JPanel {
     private javax.swing.JRadioButton coldYesRadio;
     private javax.swing.JRadioButton dosageNoRadio;
     private javax.swing.JRadioButton dosageYesRadio;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
