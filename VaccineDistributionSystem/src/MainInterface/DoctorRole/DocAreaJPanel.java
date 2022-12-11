@@ -4,19 +4,19 @@
  */
 package MainInterface.DoctorRole;
 
-import Business.DB4OUtil.DB4OUtil;
-import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
-import Business.Network.Network;
-import Business.Organization.DoctorOrganization;
-import Business.Organization.EconomyOrganization;
-import Business.Organization.LabOrganization;
-import Business.Organization.Organization;
-import Business.UserAccount.UserAccount;
-import Business.WorkQueue.LabTestWorkRequest;
-import Business.WorkQueue.WorkRequest;
-import Business.WorkQueue.appointment;
-import Business.WorkQueue.vaccinate;
+import Model.DB4OUtil.DB4OUtil;
+import Model.EcoSys;
+import Model.Enterprise.Enterprise;
+import Model.Network.Network;
+import Model.Organization.DocOrg;
+import Model.Organization.EcoOrg;
+import Model.Organization.LabOrg;
+import Model.Organization.Organization;
+import Model.UserAccount.UserAccount;
+import Model.WorkQueue.LabTestRequest;
+import Model.WorkQueue.WorkReq;
+import Model.WorkQueue.appointment;
+import Model.WorkQueue.vaccinate;
 import java.awt.CardLayout;
 import java.util.Date;
 import javax.swing.JOptionPane;
@@ -25,20 +25,18 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author abhis
+ * @author anushkadarade
  */
 public class DocAreaJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
-    private DoctorOrganization organization;
+    private DocOrg organization;
     private Enterprise enterprise;
-    private EcoSystem system;
+    private EcoSys system;
     private UserAccount userAccount;
     private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
-    /**
-     * Creates new form DoctorWorkAreaJPanel
-     */
-    public DocAreaJPanel(JPanel userProcessContainer, UserAccount account, DoctorOrganization organization, Enterprise enterprise, EcoSystem system) {
+    
+    public DocAreaJPanel(JPanel userProcessContainer, UserAccount account, DocOrg organization, Enterprise enterprise, EcoSys system) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;
@@ -166,7 +164,7 @@ public class DocAreaJPanel extends javax.swing.JPanel {
         UserAccount labUser = new UserAccount();
         Organization org = null;
         for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()){
-            if (organization instanceof LabOrganization){
+            if (organization instanceof LabOrg){
                 org = organization;
                 for(UserAccount u : organization.getUserAccountDirectory().getUserAccountList()){
                     System.out.println(u.getUsername());
@@ -263,7 +261,7 @@ public class DocAreaJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(this, "Please approve appointment first");
             return;
         }
-        WorkRequest w = (WorkRequest) tblRequest.getModel().getValueAt(selectedRow, 0);
+        WorkReq w = (WorkReq) tblRequest.getModel().getValueAt(selectedRow, 0);
         UserAccount p = w.getSender();
         userProcessContainer.removeAll();
         AddPrescriptionJPanel addPresciptionJPanel = new AddPrescriptionJPanel(userProcessContainer, enterprise, organization, system, userAccount, p);
@@ -306,7 +304,7 @@ public class DocAreaJPanel extends javax.swing.JPanel {
         
         model.setRowCount(0);
         
-        for(WorkRequest request : userAccount.getWorkQueue().getWorkRequestList()){
+        for(WorkReq request : userAccount.getWorkQueue().getWorkRequestList()){
             Object[] row = new Object[7];
             if(request instanceof appointment){
             row[0] = request;

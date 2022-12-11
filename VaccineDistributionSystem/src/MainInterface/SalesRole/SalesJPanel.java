@@ -34,7 +34,7 @@ public class SalesJPanel extends javax.swing.JPanel {
     private EcoSys system;
     private OrgDirectory directory;
     private JPanel userProcessContainer;
-    private SalesOrg organization;
+    private SaleOrg organization;
     private Enterprise enterprise;
     private Network network;
     private UserAccount userAccount;
@@ -42,7 +42,7 @@ public class SalesJPanel extends javax.swing.JPanel {
     /**
      * Creates new form DistributionWorkAreaJPanel
      */
-    public SalesJPanel(JPanel userProcessContainer, UserAccount account, SalesOrg organization, Enterprise enterprise, EcoSys system) {
+    public SalesJPanel(JPanel userProcessContainer, UserAccount account, SaleOrg organization, Enterprise enterprise, EcoSys system) {
         initComponents();
         
         this.userProcessContainer = userProcessContainer;
@@ -179,16 +179,16 @@ public class SalesJPanel extends javax.swing.JPanel {
 
     private void btnApproveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApproveActionPerformed
         // TODO add your handling code here:
-        ManufacturingOrganization org = null;
+        ManufacturingOrg org = null;
         for(Organization o : enterprise.getOrganizationDirectory().getOrganizationList()){
             for(UserAccount u : o.getUserAccountDirectory().getUserAccountList()){
                 if(u.getRole().toString().equals("Business.Role.ManufacturingRole")){
-                    org = ((ManufacturingOrganization)o);
+                    org = ((ManufacturingOrg)o);
                 }
             }
             
         }
-        for(Vaccine v : org.getVaccineDirectory()){
+        for(VaccineDetails v : org.getVaccineDirectory()){
             System.out.println("Inside for");
             if(v.getStatus().equals("Approved")){
                 System.out.println("Vaccine record approved");
@@ -207,9 +207,9 @@ public class SalesJPanel extends javax.swing.JPanel {
         if(validate(txtComments.getText())){
         request.setStatus("Approved");
         request.setTestResult("Approved");
-        ArrayList<PurchaseInventory> inv = ((requestVaccine) request).getInventoryPurchase();
+        ArrayList<OrderInventory> inv = ((requestVaccine) request).getInventoryPurchase();
         if(inv!=null){
-            for(PurchaseInventory p : inv){
+            for(OrderInventory p : inv){
                 ((requestVaccine) request).setQty(p.getQty());
                 
             }
@@ -234,16 +234,16 @@ public class SalesJPanel extends javax.swing.JPanel {
 
     private void btnRejectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRejectActionPerformed
         // TODO add your handling code here:
-        ManufacturingOrganization org = null;
+        ManufacturingOrg org = null;
         for(Organization o : enterprise.getOrganizationDirectory().getOrganizationList()){
             for(UserAccount u : o.getUserAccountDirectory().getUserAccountList()){
                 if(u.getRole().toString().equals("Business.Role.ManufacturingRole")){
-                    org = ((ManufacturingOrganization)o);
+                    org = ((ManufacturingOrg)o);
                 }
             }
             
         }
-        for(Vaccine v : org.getVaccineDirectory()){
+        for(VaccineDetails v : org.getVaccineDirectory()){
             System.out.println("Inside for");
             if(v.getStatus().equals("Approved")){
                 System.out.println("Vaccine record approved");
@@ -262,9 +262,9 @@ public class SalesJPanel extends javax.swing.JPanel {
         if(validate(txtComments.getText())){
         request.setStatus("Rejected");
         request.setTestResult("Rejected");
-        ArrayList<PurchaseInventory> inv = ((requestVaccine) request).getInventoryPurchase();
+        ArrayList<OrderInventory> inv = ((requestVaccine) request).getInventoryPurchase();
         if(inv!=null){
-            for(PurchaseInventory p : inv){
+            for(OrderInventory p : inv){
                 ((requestVaccine) request).setQty(p.getQty());
                 
             }
@@ -308,9 +308,9 @@ public class SalesJPanel extends javax.swing.JPanel {
         model.setRowCount(0);
         System.out.println(enterprise.getName());
         try{
-        for(WorkRequest wr : userAccount.getWorkQueue().getWorkRequestList()){
-            if(wr instanceof approveVaccine){
-            UserAccount inv = ((approveVaccine) wr).getSales();
+        for(WorkReq wr : userAccount.getWorkQueue().getWorkRequestList()){
+            if(wr instanceof approvedVaccine){
+            UserAccount inv = ((approvedVaccine) wr).getSales();
             Object[] row = new Object[4];
             row[0] = wr;
             row[1] = inv.getUsername();
@@ -336,7 +336,7 @@ public class SalesJPanel extends javax.swing.JPanel {
         model.setRowCount(0);
         System.out.println(enterprise.getName());
         try{
-        for(WorkRequest wr : userAccount.getWorkQueue().getWorkRequestList()){
+        for(WorkReq wr : userAccount.getWorkQueue().getWorkRequestList()){
 //            UserAccount inv = ((approveVaccine) wr).getSales();
             if(wr instanceof requestVaccine){
             Object[] row = new Object[4];

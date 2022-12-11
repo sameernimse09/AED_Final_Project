@@ -264,7 +264,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Username already exists, select a new username", "Error", JOptionPane.WARNING_MESSAGE);
             return;
         }
-        UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new AdminRole());
+        UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new AdminR());
         populateTable();
         
         dB4OUtil.storeSystem(system);
@@ -281,7 +281,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
          Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
         try{
-            SystemAdminWorkAreaJPanel sysAdminwjp = (SystemAdminWorkAreaJPanel) component;
+            ManageSystemAdminJPanel sysAdminwjp = (ManageSystemAdminJPanel) component;
         }catch(Exception e){
             System.out.println("Exception caught");
         }

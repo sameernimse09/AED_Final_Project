@@ -51,7 +51,7 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
         this.system = system;
         this.userAccount = account;
         
-        currEP = ((ServiceEnterprise) enterprise).getVaccineCount();
+        currEP = ((DistributorEnterprise) enterprise).getVaccineCount();
         txtvaccineCount.setEnabled(false);
         txtvaccineCount.setEditable(false);
         System.out.println(currEP);
@@ -83,6 +83,7 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
         lblTitle = new javax.swing.JLabel();
         lblText = new javax.swing.JLabel();
         lblValue = new javax.swing.JLabel();
+        VaccinejDateChooser = new com.toedter.calendar.JDateChooser();
 
         setBackground(new java.awt.Color(36, 47, 65));
         setMinimumSize(new java.awt.Dimension(1440, 848));
@@ -127,7 +128,6 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
             }
         ));
         tblRequests.setGridColor(new java.awt.Color(97, 212, 195));
-        tblRequests.setRowHeight(20);
         jScrollPane1.setViewportView(tblRequests);
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 485, 180));
@@ -150,7 +150,6 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
             }
         ));
         tblVaccine.setGridColor(new java.awt.Color(97, 212, 195));
-        tblVaccine.setRowHeight(20);
         jScrollPane2.setViewportView(tblVaccine);
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 500, 520, 180));
@@ -172,6 +171,7 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
         lblValue.setForeground(new java.awt.Color(97, 212, 195));
         lblValue.setText("<value>");
         add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, 230, 30));
+        add(VaccinejDateChooser, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 430, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnScheduleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnScheduleActionPerformed
@@ -183,7 +183,7 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
         }
         Date d = new Date();
         System.out.println(d);
-        if(VaccinationjDateChooser.getDate().before(d)){
+        if(VaccinejDateChooser.getDate().before(d)){
             JOptionPane.showMessageDialog(this, "Please select a future date");
             return;
         }
@@ -195,7 +195,7 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
             return;
         }
         try{
-        if(VaccinationjDateChooser.getDate().toString().length()<1){
+        if(VaccinejDateChooser.getDate().toString().length()<1){
             JOptionPane.showMessageDialog(this, "Please choose a date to schedule vaccination");
             return;
         }
@@ -216,17 +216,17 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
             
         }
         
-        req.setDate(VaccinationjDateChooser.getDate().toString());
-        req.setDt(VaccinationjDateChooser.getDate());
-        System.out.print(VaccinationjDateChooser.getDate().toString());
+        req.setDate(VaccinejDateChooser.getDate().toString());
+        req.setDt(VaccinejDateChooser.getDate());
+        System.out.print(VaccinejDateChooser.getDate().toString());
         req.setStatus("Approved");
         currEP-=1;
-        ((ServiceEnterprise) enterprise).setVaccineCount(currEP);
+        ((DistributorEnterprise) enterprise).setVaccineCount(currEP);
         
         System.out.println(enterprise.getName());
         JOptionPane.showMessageDialog(this, "Vaccination Scheduled");
         Network cn = enterprise.getNetwork();
-        for(WorkRequest wr : userAccount.getWorkQueue().getWorkRequestList()){
+        for(WorkReq wr : userAccount.getWorkQueue().getWorkRequestList()){
             if(wr instanceof requestVaccine){
                 System.out.println("Reducing vaccine count");
                 int p = ((requestVaccine) wr).getCount();
@@ -264,6 +264,7 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private com.toedter.calendar.JDateChooser VaccinejDateChooser;
     private javax.swing.JButton btnSchedule;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
@@ -280,7 +281,7 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) tblRequests.getModel();
         model.setRowCount(0);
         
-        for(WorkRequest wr : userAccount.getWorkQueue().getWorkRequestList()){
+        for(WorkReq wr : userAccount.getWorkQueue().getWorkRequestList()){
             Object[] row = new Object[4];
             if(wr instanceof vaccinate){
             row[0] = wr;
@@ -294,7 +295,7 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
     }
 
     private void populateCount() {
-        for(WorkRequest wr : userAccount.getWorkQueue().getWorkRequestList()){
+        for(WorkReq wr : userAccount.getWorkQueue().getWorkRequestList()){
             if(wr instanceof requestVaccine){
                 int i = ((requestVaccine) wr).getCount();
                 txtvaccineCount.setText(Integer.toString(i));
@@ -307,11 +308,11 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
         model.setRowCount(0);
         UserAccount distributor = new UserAccount();
         try{
-        for(WorkRequest rv:userAccount.getWorkQueue().getWorkRequestList()){
+        for(WorkReq rv:userAccount.getWorkQueue().getWorkRequestList()){
             System.out.println(enterprise.getName());
             Object row[] = new Object[4];
             if(rv instanceof requestVaccine){
-                ArrayList<PurchaseInventory> inv = ((requestVaccine) rv).getInventoryPurchase();
+                ArrayList<OrderInventory> inv = ((requestVaccine) rv).getInventoryPurchase();
         
             row[0] = rv;
             row[1] = rv.getReceiver().getUsername();
