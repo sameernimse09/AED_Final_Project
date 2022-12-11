@@ -12,7 +12,7 @@ import Model.Organization.LabOrg;
 import Model.Organization.Organization;
 import Model.Organization.ManufacturingOrg;
 import Model.UserAccount.UserAccount;
-import MainInterface.ManufacturingRole.ManufacturingWorkAreaJPanel;
+import MainInterface.ManufactureRole.ManufactureAreaJPanel;
 import javax.swing.JPanel;
 
 /**
@@ -26,7 +26,7 @@ public class ManufacturingR extends Role{
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
-       return new ManufacturingWorkAreaJPanel(userProcessContainer, account, (ManufacturingOrg)organization, enterprise, business);
+       return new ManufactureAreaJPanel(userProcessContainer, account, (ManufacturingOrg)organization, enterprise, business);
     }
 
 }

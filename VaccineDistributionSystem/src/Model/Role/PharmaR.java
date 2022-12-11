@@ -11,8 +11,8 @@ import Model.Organization.Organization;
 import Model.Organization.PersonOrg;
 import Model.UserAccount.UserAccount;
 import javax.swing.JPanel;
-import MainInterface.PersonR.PersonWorkAreaJPanel;
-import MainInterface.ui.PharmaR.PharmaWorkAreaJPanel;
+import MainInterface.PersonRole.PersonAreaJPanel;
+import MainInterface.PharmaRole.PharmaJPanel;
 /**
  *
  * @author Sameer Nimse
@@ -21,7 +21,7 @@ public class PharmaR extends Role{
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
-        return new PharmaWorkAreaJPanel(userProcessContainer, account, organization, enterprise, business);
+        return new PharmaJPanel(userProcessContainer, account, organization, enterprise, business);
     }
     
 }

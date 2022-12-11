@@ -11,7 +11,7 @@ import Model.Organization.Organization;
 import Model.Organization.PersonOrg;
 import Model.UserAccount.UserAccount;
 import javax.swing.JPanel;
-import MainInterface.PersonR.PersonWorkAreaJPanel;
+import MainInterface.PersonRole.PersonAreaJPanel;
 
 /**
  *
@@ -21,7 +21,7 @@ public class PersonR extends Role{
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
-        return new PersonWorkAreaJPanel(userProcessContainer, account, (PersonOrg)organization, enterprise, business);
+        return new PersonAreaJPanel(userProcessContainer, account, (PersonOrg)organization, enterprise, business);
     }
     
 }

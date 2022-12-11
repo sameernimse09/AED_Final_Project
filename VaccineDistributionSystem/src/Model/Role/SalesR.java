@@ -11,7 +11,7 @@ import Model.Network.Network;
 import Model.Organization.Organization;
 import Model.Organization.SaleOrg;
 import Model.UserAccount.UserAccount;
-import MainInterface.SalesR.SalesWorkAreaJPanel;
+import MainInterface.SalesRole.SalesJPanel;
 import javax.swing.JPanel;
 
 /**
@@ -22,7 +22,7 @@ public class SalesR extends Role{
    
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSys business) {
-        return new SalesWorkAreaJPanel(userProcessContainer, account, (SaleOrg)organization, enterprise, business);
+        return new SalesJPanel(userProcessContainer, account, (SaleOrg)organization, enterprise, business);
     }
 
     
