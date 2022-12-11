@@ -74,12 +74,13 @@ public class PurchaseAreaJPanel extends javax.swing.JPanel {
         lblText = new javax.swing.JLabel();
         lblValue = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(36, 47, 65));
+        setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1440, 848));
         setPreferredSize(new java.awt.Dimension(1440, 848));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tblVaccine.setBackground(new java.awt.Color(97, 212, 195));
+        tblVaccine.setBackground(new java.awt.Color(124, 169, 130));
+        tblVaccine.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         tblVaccine.setForeground(new java.awt.Color(36, 47, 65));
         tblVaccine.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -96,21 +97,21 @@ public class PurchaseAreaJPanel extends javax.swing.JPanel {
                 "Sender", "Receiver", "Quantity", "Status"
             }
         ));
-        tblVaccine.setGridColor(new java.awt.Color(97, 212, 195));
+        tblVaccine.setGridColor(new java.awt.Color(4, 182, 145));
         jScrollPane1.setViewportView(tblVaccine);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 420, 180));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, 420, 180));
 
-        btnRequest.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
+        btnRequest.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         btnRequest.setText("Request Vaccine");
         btnRequest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRequestActionPerformed(evt);
             }
         });
-        add(btnRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, -1, -1));
+        add(btnRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 470, -1, -1));
 
-        cardRequestPanel.setBackground(new java.awt.Color(36, 47, 65));
+        cardRequestPanel.setBackground(new java.awt.Color(11, 49, 48));
         cardRequestPanel.setMinimumSize(new java.awt.Dimension(670, 848));
         cardRequestPanel.setPreferredSize(new java.awt.Dimension(670, 848));
         cardRequestPanel.setLayout(new java.awt.CardLayout());
@@ -122,12 +123,12 @@ public class PurchaseAreaJPanel extends javax.swing.JPanel {
         lblText.setFont(new java.awt.Font("Optima", 0, 16)); // NOI18N
         lblText.setForeground(new java.awt.Color(255, 255, 255));
         lblText.setText("Currently Logged in as:");
-        add(lblText, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, -1, 30));
+        add(lblText, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, -1, 30));
 
         lblValue.setFont(new java.awt.Font("Optima", 1, 22)); // NOI18N
-        lblValue.setForeground(new java.awt.Color(97, 212, 195));
+        lblValue.setForeground(new java.awt.Color(124, 169, 130));
         lblValue.setText("<value>");
-        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, 230, 30));
+        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, 230, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequestActionPerformed
