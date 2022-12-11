@@ -17,12 +17,12 @@ import javax.swing.JPanel;
  *
  * @author Naisargi Thakkar
  */
-public class SystemAdminJPanel extends javax.swing.JPanel {
+public class ManageSystemAdminJPanel extends javax.swing.JPanel {
 
     JPanel userProcessContainer;
     EcoSys ecosystem;
     
-    public SystemAdminJPanel(JPanel userProcessContainer,EcoSys ecosystem) {
+    public ManageSystemAdminJPanel(JPanel userProcessContainer,EcoSys ecosystem) {
         initComponents();
         this.userProcessContainer=userProcessContainer;
         this.ecosystem=ecosystem;
@@ -59,7 +59,6 @@ public class SystemAdminJPanel extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         background.setBackground(new java.awt.Color(23, 35, 51));
-        background.setFocusTraversalKeysEnabled(false);
         background.setMaximumSize(new java.awt.Dimension(1440, 848));
         background.setMinimumSize(new java.awt.Dimension(1440, 848));
         background.setPreferredSize(new java.awt.Dimension(1440, 848));
