@@ -123,7 +123,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="160" y="40" width="148" height="-1"/>
+                      <AbsoluteConstraints x="160" y="40" width="180" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -227,7 +227,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="160" y="40" width="152" height="-1"/>
+                      <AbsoluteConstraints x="160" y="40" width="190" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -306,7 +306,7 @@
         <Container class="javax.swing.JPanel" name="cardWorkPanel">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="30" green="31" red="b" type="rgb"/>
+              <Color blue="82" green="a9" red="7c" type="rgb"/>
             </Property>
             <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[1190, 848]"/>

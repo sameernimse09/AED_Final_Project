@@ -48,8 +48,9 @@ public class AdminJPanel extends javax.swing.JPanel {
         iconOrganizations = new javax.swing.JLabel();
         cardWorkPanel = new javax.swing.JPanel();
         lblTitle = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(11, 49, 48));
+        setBackground(new java.awt.Color(36, 47, 65));
         setMinimumSize(new java.awt.Dimension(1440, 848));
         setPreferredSize(new java.awt.Dimension(1440, 848));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -154,9 +155,13 @@ public class AdminJPanel extends javax.swing.JPanel {
         cardWorkPanel.setMinimumSize(new java.awt.Dimension(1190, 848));
         cardWorkPanel.setPreferredSize(new java.awt.Dimension(1190, 848));
         cardWorkPanel.setLayout(new java.awt.CardLayout());
-
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ENTERPRISEADMIN.png"))); // NOI18N
         cardWorkPanel.add(lblTitle, "card2");
+
+        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("ENTERPRISE ADMIN");
+        jLabel1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        cardWorkPanel.add(jLabel1, "card3");
 
         add(cardWorkPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, 1130, -1));
     }// </editor-fold>//GEN-END:initComponents
@@ -197,6 +202,7 @@ public class AdminJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel iconEmployees;
     private javax.swing.JLabel iconOrganizations;
     private javax.swing.JLabel iconUsers;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblEmployees;
     private javax.swing.JLabel lblOrganizations;
     private javax.swing.JLabel lblText;

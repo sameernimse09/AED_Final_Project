@@ -43,6 +43,12 @@ public class MainJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        signoutPanel = new javax.swing.JPanel();
+        separatorLine3 = new javax.swing.JSeparator();
+        lblText = new javax.swing.JLabel();
+        iconLogoSmall = new javax.swing.JLabel();
+        iconSignout = new javax.swing.JLabel();
+        cardPanel = new javax.swing.JPanel();
         signinPanel = new javax.swing.JPanel();
         signinFormPanel = new javax.swing.JPanel();
         lblUsername = new javax.swing.JLabel();
@@ -60,12 +66,6 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         lblSignin = new javax.swing.JLabel();
         jLabelPic = new javax.swing.JLabel();
-        signoutPanel = new javax.swing.JPanel();
-        separatorLine3 = new javax.swing.JSeparator();
-        lblText = new javax.swing.JLabel();
-        iconLogoSmall = new javax.swing.JLabel();
-        iconSignout = new javax.swing.JLabel();
-        cardPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBounds(new java.awt.Rectangle(0, 23, 1600, 900));
@@ -73,6 +73,64 @@ public class MainJFrame extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(1440, 900));
         setSize(new java.awt.Dimension(1440, 900));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        signoutPanel.setBackground(new java.awt.Color(124, 169, 130));
+        signoutPanel.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        signoutPanel.setPreferredSize(new java.awt.Dimension(1440, 52));
+
+        separatorLine3.setForeground(new java.awt.Color(255, 255, 255));
+        separatorLine3.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        separatorLine3.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+
+        lblText.setFont(new java.awt.Font("Optima", 0, 18)); // NOI18N
+        lblText.setForeground(new java.awt.Color(255, 255, 255));
+        lblText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblText.setText("Prevention Is Better Than Cure");
+
+        iconLogoSmall.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Logo-top.png"))); // NOI18N
+
+        iconSignout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/signout.png"))); // NOI18N
+        iconSignout.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                iconSignoutMousePressed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout signoutPanelLayout = new javax.swing.GroupLayout(signoutPanel);
+        signoutPanel.setLayout(signoutPanelLayout);
+        signoutPanelLayout.setHorizontalGroup(
+            signoutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, signoutPanelLayout.createSequentialGroup()
+                .addGap(108, 108, 108)
+                .addComponent(iconLogoSmall, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(66, 66, 66)
+                .addComponent(separatorLine3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(313, 313, 313)
+                .addComponent(lblText)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 534, Short.MAX_VALUE)
+                .addComponent(iconSignout)
+                .addGap(26, 26, 26))
+        );
+        signoutPanelLayout.setVerticalGroup(
+            signoutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(signoutPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(separatorLine3)
+                .addContainerGap())
+            .addComponent(iconSignout, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
+            .addComponent(iconLogoSmall, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+            .addGroup(signoutPanelLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(lblText)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(signoutPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        cardPanel.setBackground(new java.awt.Color(36, 47, 65));
+        cardPanel.setMinimumSize(new java.awt.Dimension(1440, 848));
+        cardPanel.setPreferredSize(new java.awt.Dimension(1440, 848));
+        cardPanel.setLayout(new java.awt.CardLayout());
 
         signinPanel.setBackground(new java.awt.Color(11, 49, 48));
         signinPanel.setPreferredSize(new java.awt.Dimension(1440, 900));
@@ -179,65 +237,8 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabelPic.setText("jLabel4");
         signinPanel.add(jLabelPic, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1440, 1000));
 
-        getContentPane().add(signinPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        cardPanel.add(signinPanel, "card2");
 
-        signoutPanel.setBackground(new java.awt.Color(124, 169, 130));
-        signoutPanel.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        signoutPanel.setPreferredSize(new java.awt.Dimension(1440, 52));
-
-        separatorLine3.setForeground(new java.awt.Color(255, 255, 255));
-        separatorLine3.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        separatorLine3.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
-
-        lblText.setFont(new java.awt.Font("Optima", 0, 18)); // NOI18N
-        lblText.setForeground(new java.awt.Color(255, 255, 255));
-        lblText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblText.setText("Prevention Is Better Than Cure");
-
-        iconLogoSmall.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Logo-top.png"))); // NOI18N
-
-        iconSignout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/signout.png"))); // NOI18N
-        iconSignout.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                iconSignoutMousePressed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout signoutPanelLayout = new javax.swing.GroupLayout(signoutPanel);
-        signoutPanel.setLayout(signoutPanelLayout);
-        signoutPanelLayout.setHorizontalGroup(
-            signoutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, signoutPanelLayout.createSequentialGroup()
-                .addGap(108, 108, 108)
-                .addComponent(iconLogoSmall, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(66, 66, 66)
-                .addComponent(separatorLine3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(313, 313, 313)
-                .addComponent(lblText)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 484, Short.MAX_VALUE)
-                .addComponent(iconSignout)
-                .addGap(26, 26, 26))
-        );
-        signoutPanelLayout.setVerticalGroup(
-            signoutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(signoutPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(separatorLine3)
-                .addContainerGap())
-            .addComponent(iconSignout, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
-            .addComponent(iconLogoSmall, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-            .addGroup(signoutPanelLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(lblText)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        getContentPane().add(signoutPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        cardPanel.setBackground(new java.awt.Color(36, 47, 65));
-        cardPanel.setMinimumSize(new java.awt.Dimension(1440, 848));
-        cardPanel.setPreferredSize(new java.awt.Dimension(1440, 848));
-        cardPanel.setLayout(new java.awt.CardLayout());
         getContentPane().add(cardPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 52, 1440, 848));
 
         pack();

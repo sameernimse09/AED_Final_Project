@@ -75,6 +75,7 @@ public class EcoAreaJPanel extends javax.swing.JPanel {
         lblTitle = new javax.swing.JLabel();
         lblText = new javax.swing.JLabel();
         lblValue = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1440, 848));
@@ -195,9 +196,7 @@ public class EcoAreaJPanel extends javax.swing.JPanel {
         separatorLine3.setMinimumSize(new java.awt.Dimension(1, 12));
         separatorLine3.setPreferredSize(new java.awt.Dimension(1, 12));
         add(separatorLine3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 600, 180, -1));
-
-        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ECONOMYWORKAREA.png"))); // NOI18N
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1320, 0, 120, 850));
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 0, 100, 850));
 
         lblText.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblText.setForeground(new java.awt.Color(255, 255, 255));
@@ -207,7 +206,12 @@ public class EcoAreaJPanel extends javax.swing.JPanel {
         lblValue.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         lblValue.setForeground(new java.awt.Color(124, 169, 130));
         lblValue.setText("<value>");
-        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, 230, 30));
+        add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, 230, 30));
+
+        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("ECONOMY AREA");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 50, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     public void populateTable(){
@@ -300,6 +304,7 @@ public class EcoAreaJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnApprove;
     private javax.swing.JButton btnReject;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblDose;
     private javax.swing.JLabel lblGap;
