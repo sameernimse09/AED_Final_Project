@@ -172,7 +172,7 @@ public class NDistirbutionJPanel extends javax.swing.JPanel {
         lblValue.setForeground(new java.awt.Color(124, 169, 130));
         lblValue.setText("<value>");
         add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, 230, 30));
-        add(VaccinejDateChooser, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 430, -1, -1));
+        add(VaccinejDateChooser, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 430, 140, -1));
 
         jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
