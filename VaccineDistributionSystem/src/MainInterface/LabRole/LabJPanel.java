@@ -600,31 +600,44 @@ public class LabJPanel extends javax.swing.JPanel {
 
     private void btnSendReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSendReportActionPerformed
         // TODO add your handling code here:
+        //JOptionPane;
+        JOptionPane.showMessageDialog(null, "Done");
+        System.out.println("****************************************");
         String toEmail = txtTo.getText();
-        String fromEmail = "nuccfall2021@gmail.com";
-        String fromEmailPassword = "nuccnucc";
-        String subject = "Report from NUCC";
+        String fromEmail = "vaccineaed1212@gmail.com";
+        String fromEmailPassword = "hatttqnmdiklnkwq";
+        String subject = "Report from NPC";
+        
+        JOptionPane.showMessageDialog(null, toEmail);
+        
         
         Properties props = new Properties();
-        props.put("mail.smtp.user","username"); 
+        props.put("mail.smtp.user",fromEmail); 
         props.put("mail.smtp.host", "smtp.gmail.com"); 
-        props.put("mail.smtp.port", "25"); 
+       // props.put("mail.smtp.port", "25"); 
         props.put("mail.debug", "true"); 
-        props.put("mail.smtp.auth", "true"); 
+        props.put("mail.smtp.auth", "true");
+        props.put("mail.smtp.ssl", "true"); 
+
         props.put("mail.smtp.starttls.enable","true"); 
         props.put("mail.smtp.EnableSSL.enable","true");
 
         props.setProperty("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");   
         props.setProperty("mail.smtp.socketFactory.fallback", "false");   
         props.setProperty("mail.smtp.port", "465");   
-        props.setProperty("mail.smtp.socketFactory.port", "465");
+       // props.setProperty("mail.smtp.socketFactory.port", "587");
+       
         
         Session session = Session.getDefaultInstance(props , new javax.mail.Authenticator() {
+            @Override
             protected PasswordAuthentication getPasswordAuthentication(){
                 return new PasswordAuthentication(fromEmail , fromEmailPassword);
             }
         });
-        populateTable();
+        
+        //System.out.println("Table not yet populated");
+        
+        //JOptionPane.showMessageDialog(null, "Table not yet populated");
         
         try{
             MimeMessage message = new MimeMessage(session);
@@ -636,7 +649,7 @@ public class LabJPanel extends javax.swing.JPanel {
         }catch(Exception e){
             System.out.print(e);
         }
-        
+        populateTable();
     }//GEN-LAST:event_btnSendReportActionPerformed
 
     private void pulseYesRadioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pulseYesRadioActionPerformed
@@ -731,10 +744,12 @@ public class LabJPanel extends javax.swing.JPanel {
     public void populateTable(){
         DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
         
-        model.setRowCount(0);
+        //model.setRowCount(0);
         
         for(WorkReq request : organization.getWorkQueue().getWorkRequestList()){
             Object[] row = new Object[6];
+            System.out.println(request);
+            System.out.println("1");
             if(request instanceof appointment){
             row[0] = request;
             row[1] = request.getSender().getEmployee().getName();
@@ -746,7 +761,13 @@ public class LabJPanel extends javax.swing.JPanel {
             row[5] = result;
             
             
+            
+            for (Object row1 : row){
+                JOptionPane.showMessageDialog(null, "Hi");
+            }
+            
             model.addRow(row);
+            JOptionPane.showMessageDialog(null, "Hi row add");
         }
         }
     }
