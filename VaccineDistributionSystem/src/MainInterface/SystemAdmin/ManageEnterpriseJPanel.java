@@ -86,7 +86,6 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
         btnSubmit = new javax.swing.JButton();
         separatorLine = new javax.swing.JSeparator();
         lblTitle = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1190, 848));
@@ -174,11 +173,6 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
 
         lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ENTERPRISES.png"))); // NOI18N
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 0, 100, 850));
-
-        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("ENTERPRISES");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 70, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
@@ -236,7 +230,6 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnSubmit;
     private javax.swing.JComboBox cmbEnterprise;
     private javax.swing.JComboBox cmbNetwork;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblEnterprise;
     private javax.swing.JLabel lblName;

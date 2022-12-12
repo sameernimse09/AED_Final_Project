@@ -154,7 +154,7 @@ public class ManageSystemAdminJPanel extends javax.swing.JPanel {
 
         background.add(menuPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, -1));
 
-        cardWorkPanel.setBackground(new java.awt.Color(124, 169, 130));
+        cardWorkPanel.setBackground(new java.awt.Color(11, 49, 48));
         cardWorkPanel.setMinimumSize(new java.awt.Dimension(1190, 848));
         cardWorkPanel.setPreferredSize(new java.awt.Dimension(1190, 848));
         cardWorkPanel.setLayout(new java.awt.CardLayout());
@@ -219,12 +219,12 @@ public class ManageSystemAdminJPanel extends javax.swing.JPanel {
     
     private void setColor(JPanel pane)
     {
-        pane.setBackground(new Color(23,35,51));
+        pane.setBackground(new Color(124,169,130));
     }
     private void resetColor(JPanel [] pane)
     {
         for(int i=0;i<pane.length;i++){
-           pane[i].setBackground(new Color(36,47,65));
+           pane[i].setBackground(new Color(11,49,48));
            
         }
     }

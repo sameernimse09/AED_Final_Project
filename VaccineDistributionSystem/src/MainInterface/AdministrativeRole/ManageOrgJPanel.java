@@ -117,7 +117,6 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
         cmbOrganization = new javax.swing.JComboBox();
         lblOrganization = new javax.swing.JLabel();
         lblTitle = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1190, 848));
@@ -183,12 +182,9 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
         lblOrganization.setForeground(new java.awt.Color(255, 255, 255));
         lblOrganization.setText("Organization Type:");
         add(lblOrganization, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 410, -1, -1));
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 0, 100, 850));
 
-        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("ORGANIZATIONS");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 40, -1, -1));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ORGANIZATIONS.png"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 0, 100, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
@@ -205,7 +201,6 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdd;
     private javax.swing.JComboBox cmbOrganization;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblOrganization;
     private javax.swing.JLabel lblTitle;

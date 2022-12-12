@@ -77,7 +77,7 @@ public class AdminJPanel extends javax.swing.JPanel {
         });
         threePanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblUsers.setFont(new java.awt.Font("Optima", 1, 16)); // NOI18N
+        lblUsers.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         lblUsers.setForeground(new java.awt.Color(255, 255, 255));
         lblUsers.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblUsers.setText("MANAGE USERS");
@@ -109,7 +109,7 @@ public class AdminJPanel extends javax.swing.JPanel {
         });
         twoPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblEmployees.setFont(new java.awt.Font("Optima", 1, 16)); // NOI18N
+        lblEmployees.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         lblEmployees.setForeground(new java.awt.Color(255, 255, 255));
         lblEmployees.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblEmployees.setText("MANAGE EMPLOYEES");
@@ -134,7 +134,7 @@ public class AdminJPanel extends javax.swing.JPanel {
         });
         onePanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblOrganizations.setFont(new java.awt.Font("Optima", 1, 16)); // NOI18N
+        lblOrganizations.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         lblOrganizations.setForeground(new java.awt.Color(255, 255, 255));
         lblOrganizations.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblOrganizations.setText("MANAGE ORGANIZATION");
@@ -216,12 +216,12 @@ public class AdminJPanel extends javax.swing.JPanel {
     // End of variables declaration//GEN-END:variables
     private void setColor(JPanel pane)
     {
-        pane.setBackground(new Color(23,35,51));
+        pane.setBackground(new Color(124,169,130));
     }
     private void resetColor(JPanel [] pane)
     {
         for(int i=0;i<pane.length;i++){
-           pane[i].setBackground(new Color(36,47,65));
+           pane[i].setBackground(new Color(11,49,48));
            
         }
     }

@@ -70,7 +70,6 @@ public class DocAreaJPanel extends javax.swing.JPanel {
         lblValue = new javax.swing.JLabel();
         lblTitle = new javax.swing.JLabel();
         appointmentjDateChooser = new com.toedter.calendar.JDateChooser();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1440, 848));
@@ -145,13 +144,10 @@ public class DocAreaJPanel extends javax.swing.JPanel {
         lblValue.setForeground(new java.awt.Color(124, 169, 130));
         lblValue.setText("<value>");
         add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 230, 30));
+
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/DOCTORWORKAREA.png"))); // NOI18N
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 0, 100, 850));
         add(appointmentjDateChooser, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 340, 130, -1));
-
-        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("DOCTOR AREA");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 30, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnTestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTestActionPerformed
@@ -298,7 +294,6 @@ public class DocAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnPrescribeMed;
     private javax.swing.JButton btnReject;
     private javax.swing.JButton btnTest;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblText;
     private javax.swing.JLabel lblTitle;

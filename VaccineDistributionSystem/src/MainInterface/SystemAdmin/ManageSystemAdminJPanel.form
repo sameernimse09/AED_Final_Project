@@ -306,7 +306,7 @@
         <Container class="javax.swing.JPanel" name="cardWorkPanel">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="82" green="a9" red="7c" type="rgb"/>
+              <Color blue="30" green="31" red="b" type="rgb"/>
             </Property>
             <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[1190, 848]"/>
