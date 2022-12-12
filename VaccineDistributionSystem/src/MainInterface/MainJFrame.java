@@ -54,11 +54,11 @@ public class MainJFrame extends javax.swing.JFrame {
         chkTerms = new javax.swing.JCheckBox();
         buttonSign = new javax.swing.JButton();
         iconExit = new javax.swing.JLabel();
+        lblSignin = new javax.swing.JLabel();
         lblRights = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        lblSignin = new javax.swing.JLabel();
         jLabelPic = new javax.swing.JLabel();
         signoutPanel = new javax.swing.JPanel();
         separatorLine3 = new javax.swing.JSeparator();
@@ -157,23 +157,24 @@ public class MainJFrame extends javax.swing.JFrame {
         });
         signinPanel.add(iconExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1376, 14, -1, -1));
 
-        lblRights.setFont(new java.awt.Font("Lucida Grande", 0, 12)); // NOI18N
-        lblRights.setForeground(new java.awt.Color(204, 204, 204));
-        signinPanel.add(lblRights, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 880, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/copyright.png"))); // NOI18N
-        signinPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 880, 30, 20));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/trademark.png"))); // NOI18N
-        signinPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 880, -1, -1));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/gradient_img.png"))); // NOI18N
-        signinPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 0, 410, 900));
-
         lblSignin.setFont(new java.awt.Font("Malgun Gothic", 1, 36)); // NOI18N
         lblSignin.setForeground(new java.awt.Color(255, 255, 255));
         lblSignin.setText("Vaccine Distribution System");
         signinPanel.add(lblSignin, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 80, -1, 50));
+
+        lblRights.setFont(new java.awt.Font("Lucida Grande", 0, 12)); // NOI18N
+        lblRights.setForeground(new java.awt.Color(204, 204, 204));
+        lblRights.setText("All Right Reserved NPC 2022");
+        signinPanel.add(lblRights, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 850, -1, 30));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/copyright.png"))); // NOI18N
+        signinPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 850, 20, 20));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/trademark.png"))); // NOI18N
+        signinPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 850, -1, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/gradient_img.png"))); // NOI18N
+        signinPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 950));
 
         jLabelPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Logo-signin.png"))); // NOI18N
         jLabelPic.setText("jLabel4");
@@ -342,7 +343,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void buttonSignMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonSignMouseEntered
         // TODO add your handling code here:
-        buttonSign.setForeground(Color.RED);
+        buttonSign.setForeground(new Color(124, 169, 130));
         
     }//GEN-LAST:event_buttonSignMouseEntered
 

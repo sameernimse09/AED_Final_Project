@@ -66,7 +66,6 @@ public class VaccineJPanel extends javax.swing.JPanel {
         separatorLine1 = new javax.swing.JSeparator();
         lblTitle = new javax.swing.JLabel();
         iconBack = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1440, 848));
@@ -123,7 +122,9 @@ public class VaccineJPanel extends javax.swing.JPanel {
         separatorLine1.setMinimumSize(new java.awt.Dimension(1, 12));
         separatorLine1.setPreferredSize(new java.awt.Dimension(1, 12));
         add(separatorLine1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 250, 220, 10));
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 0, 90, 850));
+
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/HEALTHWORKAREA.png"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 0, 130, 850));
 
         iconBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/back.png"))); // NOI18N
         iconBack.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -132,11 +133,6 @@ public class VaccineJPanel extends javax.swing.JPanel {
             }
         });
         add(iconBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 620, -1, -1));
-
-        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("HEALTH AREA");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 60, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
@@ -185,7 +181,6 @@ public class VaccineJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddVaccine;
     private javax.swing.JLabel iconBack;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblAddVaccine;
     private javax.swing.JLabel lblName;
     private javax.swing.JLabel lblScientific;

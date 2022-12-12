@@ -76,7 +76,6 @@ public class ManufactureAreaJPanel extends javax.swing.JPanel {
         lblText = new javax.swing.JLabel();
         lblValue = new javax.swing.JLabel();
         lblTitle = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1440, 848));
@@ -142,12 +141,9 @@ public class ManufactureAreaJPanel extends javax.swing.JPanel {
         lblValue.setForeground(new java.awt.Color(124, 169, 130));
         lblValue.setText("<value>");
         add(lblValue, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 250, 230, 30));
-        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 0, 90, 850));
 
-        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("MANUFACTURE AREA");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 50, -1, -1));
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/MANUFACTURINGWORKAREA.png"))); // NOI18N
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1330, 0, 110, 850));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSendSampleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSendSampleActionPerformed
@@ -265,7 +261,6 @@ public class ManufactureAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnAddVaccine;
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnSendSample;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblText;
     private javax.swing.JLabel lblTitle;
