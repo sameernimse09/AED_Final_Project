@@ -112,7 +112,6 @@ public class LabJPanel extends javax.swing.JPanel {
         lblPulse = new javax.swing.JLabel();
         barPulse = new javax.swing.JProgressBar();
         barBloodPressure = new javax.swing.JProgressBar();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(11, 49, 48));
         setMinimumSize(new java.awt.Dimension(1440, 848));
@@ -382,6 +381,8 @@ public class LabJPanel extends javax.swing.JPanel {
         separatorLine2.setMinimumSize(new java.awt.Dimension(1, 12));
         separatorLine2.setPreferredSize(new java.awt.Dimension(1, 12));
         add(separatorLine2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 630, 220, 10));
+
+        lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/LABWORKAREA.png"))); // NOI18N
         add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 0, 100, 850));
 
         lblQ5.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
@@ -453,11 +454,6 @@ public class LabJPanel extends javax.swing.JPanel {
         barBloodPressure.setForeground(new java.awt.Color(0, 255, 51));
         barBloodPressure.setBorder(null);
         add(barBloodPressure, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 360, -1, -1));
-
-        jLabel1.setFont(new java.awt.Font("Malgun Gothic", 0, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("LAB AREA");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 30, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
@@ -706,7 +702,6 @@ public class LabJPanel extends javax.swing.JPanel {
     private javax.swing.JRadioButton coldYesRadio;
     private javax.swing.JRadioButton dosageNoRadio;
     private javax.swing.JRadioButton dosageYesRadio;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
