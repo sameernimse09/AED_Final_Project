@@ -49,7 +49,7 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
         String enterpriseType = enterprise.getClass().toString();
         //System.out.println(enterprise.getClass().toString());
         for (Type type : Type.values()){
-            if (enterpriseType.equals("class Business.Enterprise.GovernmentEnterprise")){
+            if (enterpriseType.equals("class Model.Enterprise.GovtEnterprise")){
                 if(type.equals(Type.Health)){
                    cmbOrganization.addItem(type);
                 }
@@ -59,7 +59,7 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
                 if(type.equals(Type.Person)){
                    cmbOrganization.addItem(type);
                 }
-            } else if(enterpriseType.equals("class Business.Enterprise.HospitalEnterprise")){
+            } else if(enterpriseType.equals("class Model.Enterprise.HospitalEnterprise")){
                 if(type.equals(Type.Doctor)){
                    cmbOrganization.addItem(type);
                 }
@@ -71,14 +71,14 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
                 }
                 
         }
-            else if(enterpriseType.equals("class Business.Enterprise.PharmaceuticalEnterprise")){
+            else if(enterpriseType.equals("class Model.Enterprise.ManufacturerEnterprise")){
                 if(type.equals(Type.Manufacturing)){
                    cmbOrganization.addItem(type);
                 }
                 if(type.equals(Type.Sales)){
                    cmbOrganization.addItem(type);
                 }
-            } else if(enterpriseType.equals("class Business.Enterprise.ServiceEnterprise")){
+            } else if(enterpriseType.equals("class Model.Enterprise.DistributorEnterprise")){
                 if(type.equals(Type.Purchase)){
                    cmbOrganization.addItem(type);
                 }
